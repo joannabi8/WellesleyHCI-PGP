@@ -5,6 +5,21 @@
     <meta name=author content="Joanna Bi">
   	<link rel="stylesheet" href="styles/bootswatch.css">
   	<link rel="stylesheet" type="text/css" href="styles/vis_style.css">
+  	
+  	<script type="text/javascript">
+			var numPages = 3;
+			var page = new Array(numPages + 1);
+			//array of possible pages
+			page[0] = "table.html";
+			page[1] = "treeMap.html";
+			page[2] = "bubble.html";
+			page[3] = "bar.html";
+			//function to generate random
+			function randomPage() {
+				window.location = page[Math.floor(Math.random()*page.length)]
+			}
+		</script>
+  	
   	<title>PGHCI for GET Labs: Training</title>
 </head>
 
@@ -60,6 +75,13 @@
 
 	<p>
 
+
+
+	<form>
+	<p>
+	<input type="button" name="B1" value="Random Link >>" onclick="randomPage()">
+	</p> 
+	</form>
 
 
 </body>
