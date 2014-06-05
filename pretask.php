@@ -4,6 +4,21 @@ Wellesley HCI PGP
 SUMMER 2014
 -->
 
+<?php
+session_start();
+require_once('pgp_function.php');
+$dbh;
+localConn(); //establish connection
+
+$uid = new_user(); // helper function from pgp_function.php
+$_SESSION["user"] = $uid;
+
+?>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
+	 *  BEGIN HTML CODE
+	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
 <!doctype html>
 <html lang='en'>
 <head>
@@ -79,7 +94,7 @@ SUMMER 2014
 	<!-- BEGIN QUIZ QUESTIONS -->
 
 	<h2>Questions about personal genomics</h2>
-	<form id="training_form" method="POST" action=<?php echo $action ?>>
+	<form id="pretask" method="POST" action="pretask_process.php">
 	<!-- INCLUDE FORWARD / BACK BUTTONS LATER -->
 
 	<ol><li><b>Do your genes determine everything about you and your future?</b><br>
@@ -110,23 +125,8 @@ SUMMER 2014
 			<label><input type="radio" name="q6" value="no">No</label>
 	</ol>
 	
-	<!--Submit button takes user to random visualization-->
-	<p><input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" onclick="randomPage()" id="Submit_PreTask"></p> 
+	<p><input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" id="Submit_PreTask"></p> 
 	</form>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
-	 *  BEGIN PHP CODE
-	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<?php
-
-
-	
-?>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
-	 *  END PHP CODE
-	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 </body>
 </html>
