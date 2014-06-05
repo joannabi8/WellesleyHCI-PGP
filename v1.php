@@ -17,20 +17,19 @@
 <html>
 	<head>
 		<title>PGP Visualization: Table</title>
-		<!-- jQuery & vis.js-->
-		<script type="text/javascript" charset="utf8" src="resource/js/jquery-1.10.2.js"></script>
-		<script type="text/javascript" charset="utf8" src="resource/vis.js"></script>
-		
-		<!-- DataTables -->
-		<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
-		<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-		
+		<!--Google TreeMap API-->
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+		<!--jQuery & vis.js-->
+		<script type="text/javascript" charset="utf8" src="scripts/jquery/jquery-1.10.2.js"></script>
+		<script type="text/javascript" charset="utf8" src="scripts/vis.js"></script>
+
 		<!-- jQuery UI -->
-		<link rel="stylesheet" type="text/css" href="resource/jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.css" rel="stylesheet">
-		<script type="text/javascript" charset="utf8" src="resource/js/jquery-ui-1.10.4.custom.js"></script>
-		
-		<link href="resource/bootswatch.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="resource/vis_style.css">
+		<link rel="stylesheet" type="text/css" href="scripts/jquery/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+		<script type="text/javascript" charset="utf8" src="scripts/jquery/jquery-ui-1.10.4.custom.js"></script>
+
+		<link href="styles/bootswatch.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
 
 		<script>
 			$(function(){
