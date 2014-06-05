@@ -3,23 +3,13 @@ Wellesley HCI PGP
 SUMMER 2014
 -->
 
-<?php
-
-
-	
-?>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
-	 *  BEGIN HTML CODE
-	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 <!doctype html>
 <html lang='en'>
 <head>
 	<meta charset='utf-8'>
     <meta name=author content="Joanna Bi">
   	<link rel="stylesheet" href="styles/bootswatch.css">
-  	<link rel="stylesheet" type="text/css" href="styles/vis_style.css">
+  	<link rel="stylesheet" type="text/css" href="styles/style.css">
   	<!--Javascript for generating random vis-->
   	<script type="text/javascript">
 		var numPages = 3;
@@ -119,9 +109,23 @@ SUMMER 2014
 			<label><input type="radio" name="q6" value="no">No</label>
 	</ol>
 	
-	<!--Submit buttons takes user to random visualization-->
-	<p><input type="button" name="B1" value="Submit" onclick="randomPage()"></p> 
+	<!--Submit button takes user to random visualization-->
+	<p><input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" onclick="randomPage()" id="Submit_PreTask"></p> 
 	</form>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
+	 *  BEGIN PHP CODE
+	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<?php
+
+
+	
+?>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
+	 *  END PHP CODE
+	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 </body>
 </html>
