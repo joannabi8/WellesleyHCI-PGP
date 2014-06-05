@@ -1,0 +1,398 @@
+<!-- v1.php
+	First Visualization for PGP user test
+	Claire Schlenker
+	Created: 4 June 2014
+	Edited: 4 June 2014
+	For Wellesley College HCI lab -->
+
+	<!DOCTYPE html> 
+	<html>
+	<head>
+		<title>PGP Visualization: TreeMap</title>
+		<!--Google TreeMap API-->
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<!--jQuery & vis.js-->
+		<script type="text/javascript" charset="utf8" src="resource/js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" charset="utf8" src="resource/vis.js"></script>
+		<!-- jQuery UI -->
+		<link rel="stylesheet" type="text/css" href="resource/jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.css">
+		<script type="text/javascript" charset="utf8" src="resource/js/jquery-ui-1.10.4.custom.js"></script>
+		<link href="resource/bootswatch.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="resource/vis_style.css">
+		<script>
+			$(function(){
+				// Validate form
+				var submit_id = $("#Submit_v1");
+				var form_id = $("#v1_q");
+				var validateWarning = $("#validate_msg");
+				
+				validateForm_vis(submit_id,form_id,validateWarning);
+
+				// Load Google TreeMap
+				google.load('visualization', '1', {
+					"packages": ['treemap'],
+					"callback": treeMapLoaded
+				});
+
+			});
+			
+		</script>
+		<script type="text/javascript" src="http://www.google.com/uds/?file=visualization&amp;v=1&amp;packages=treemap&amp;async=2"></script>
+		<link type="text/css" href="http://www.google.com/uds/api/visualization/1.0/ce05bcf99b897caacb56a7105ca4b6ed/ui+en.css" rel="stylesheet">
+		<script type="text/javascript" src="http://www.google.com/uds/api/visualization/1.0/ce05bcf99b897caacb56a7105ca4b6ed/format+en,default+en,ui+en,treemap+en.I.js"></script>
+	</head>
+	<body>
+			<div class="navbar navbar-fixed-top navbar-inverse">
+				<div class="navbar-inner">
+					<div class="container">
+						<span class="brand"><img src="resource/assets/img/dna.png"> Your Personal Genomics Report</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container" id="study_wrapper">
+				<h2>Instructions</h2>
+				<p>Following is a report that is based on an individual's personal genomic information. 
+					For the purpose of this study we will name this individual Jamie. Read the explanation 
+					below carefully and then study Jamie's report. You will be asked questions about this report. 
+					The report was created by comparing Jamie's genome and a database of gene variants that are known
+					to be associated with medical conditions. Only gene variants that are found to be medically relevant
+					are reported.The report displays a table of gene variants. For each gene variant the table presents
+					its name, clinical importance, impact, allele frequency, and a summary about the medical conditions
+					it is associated with. You can sort the table by clicking on the arrows in each of the table columns.
+					Also, when hovering upon a column name, additional information about this information category is presented.</p>
+
+				<div id="visualization">
+					<div id="vis_low">
+						<div dir="ltr" style="position: relative; width: 340px; height: 500px;">
+							<div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+								<svg width="330" height="500" style="overflow: hidden;">
+									<defs id="defs"></defs>
+									<g style="cursor: default;">
+										<rect x="5" y="20" width="50" height="96" stroke="#ffffff" stroke-width="1" fill="#9df737"></rect>
+										<text text-anchor="middle" x="30" y="72.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">IL7R-T...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="55" y="20" width="50" height="96" stroke="#ffffff" stroke-width="1" fill="#9df737"></rect>
+									    <text text-anchor="middle" x="80" y="72.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">KCNJ1...</text></g>
+									<g style="cursor: default;"><rect x="105" y="20" width="50" height="96" stroke="#ffffff" stroke-width="1" fill="#adf161"></rect>
+										<text text-anchor="middle" x="130" y="72.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">ARSA-...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="5" y="116" width="38" height="127" stroke="#ffffff" stroke-width="1" fill="#bdea8a"></rect>
+										<text text-anchor="middle" x="24" y="183.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">MSH...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="43" y="116" width="112" height="43" stroke="#ffffff" stroke-width="1" fill="#bdea8a"></rect>
+										<text text-anchor="middle" x="99" y="141.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">CACNA1S-L458H</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="43" y="159" width="56" height="84" stroke="#ffffff" stroke-width="1" fill="#bdea8a"></rect>
+										<text text-anchor="middle" x="71" y="205.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">ADA-K8...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="99" y="159" width="56" height="84" stroke="#ffffff" stroke-width="1" fill="#bdea8a"></rect>
+										<text text-anchor="middle" x="127" y="205.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">COL9A2...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="155" y="20" width="57" height="84" stroke="#ffffff" stroke-width="1" fill="#bdea8a"></rect>
+										<text text-anchor="middle" x="183.5" y="66.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">FANCI-P...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="212" y="20" width="57" height="84" stroke="#ffffff" stroke-width="1" fill="#bdea8a"></rect>
+										<text text-anchor="middle" x="240.5" y="66.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">PKD1-A...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="269" y="20" width="56" height="84" stroke="#ffffff" stroke-width="1" fill="#cde4b4"></rect>
+										<text text-anchor="middle" x="297" y="66.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">LIG4-A3V</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="155" y="104" width="68" height="70" stroke="#ffffff" stroke-width="1" fill="#cde4b4"></rect>
+										<text text-anchor="middle" x="189" y="143.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">DTNBP1-...</text>
+									</g>
+									<g style="cursor: default;"><rect x="155" y="174" width="68" height="69" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="189" y="212.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">COL5A2-P...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="223" y="104" width="102" height="47" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="274" y="131.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">CASP8-M1T</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="223" y="151" width="51" height="92" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="248.5" y="201.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">PKP2-L...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="274" y="151" width="51" height="92" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="299.5" y="201.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">RP1-N...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="5" y="243" width="51" height="95" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="30.5" y="294.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">DSP-R...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="56" y="243" width="50" height="95" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="81" y="294.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">ELN-G...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="106" y="243" width="50" height="95" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="131" y="294.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">LYST-...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="5" y="338" width="76" height="63" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="43" y="373.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">MAPT-R370...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="81" y="338" width="75" height="63" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="118.5" y="373.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">TCIRG1-R5...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="5" y="401" width="51" height="94" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="30.5" y="452.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">PTCH1...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="56" y="401" width="50" height="94" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="81" y="452.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">TXND...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="106" y="401" width="50" height="94" stroke="#ffffff" stroke-width="1" fill="#dddddd"></rect>
+										<text text-anchor="middle" x="131" y="452.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">MUSK-...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="156" y="243" width="43" height="112" stroke="#ffffff" stroke-width="1" fill="#e6b7b3"></rect>
+										<text text-anchor="middle" x="177.5" y="303.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">WFS1...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="199" y="243" width="42" height="112" stroke="#ffffff" stroke-width="1" fill="#ee9188"></rect>
+										<text text-anchor="middle" x="220" y="303.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">RNA...</text>
+									</g>
+									<g style="cursor: default;">
+										<rect x="241" y="243" width="84" height="56" stroke="#ffffff" stroke-width="1" fill="#ee9188"></rect>
+										<text text-anchor="middle" x="283" y="275.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">TGIF1-P83Shift</text>
+									</g><g style="cursor: default;"><rect x="241" y="299" width="84" height="56" stroke="#ffffff" stroke-width="1" fill="#ee9188"></rect><text text-anchor="middle" x="283" y="331.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">TLR5-R392X</text></g><g style="cursor: default;"><rect x="156" y="355" width="68" height="70" stroke="#ffffff" stroke-width="1" fill="#ee9188"></rect><text text-anchor="middle" x="190" y="394.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">SP110-L4...</text></g><g style="cursor: default;"><rect x="156" y="425" width="68" height="70" stroke="#ffffff" stroke-width="1" fill="#ee9188"></rect><text text-anchor="middle" x="190" y="464.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">HFE-H63D</text></g><g style="cursor: default;"><rect x="224" y="355" width="101" height="47" stroke="#ffffff" stroke-width="1" fill="#ee9188"></rect><text text-anchor="middle" x="274.5" y="382.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">ACAD8-S171C</text></g><g style="cursor: default;"><rect x="224" y="402" width="51" height="93" stroke="#ffffff" stroke-width="1" fill="#f76a5e"></rect><text text-anchor="middle" x="249.5" y="452.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">MTRR-I...</text></g><g style="cursor: default;"><rect x="275" y="402" width="50" height="93" stroke="#ffffff" stroke-width="1" fill="#ff4433"></rect><text text-anchor="middle" x="300" y="452.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">SERPI...</text></g><g style="cursor: pointer;"><rect x="5" y="0" width="320" height="20" stroke="#ffffff" stroke-width="1" fill="#cccccc"></rect><text text-anchor="middle" x="165" y="14.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">Low Clinical Impact</text></g><g><rect x="152.5" y="171.5" width="73" height="74" stroke="#ffffff" stroke-width="5" stroke-opacity="0.2" fill-opacity="1" fill="none"></rect><rect x="153" y="172" width="72" height="73" stroke="#ffffff" stroke-width="4" stroke-opacity="0.4" fill-opacity="1" fill="none"></rect><rect x="153.5" y="172.5" width="71" height="72" stroke="#ffffff" stroke-width="3" stroke-opacity="0.6" fill-opacity="1" fill="none"></rect></g></svg></div></div><div style="display: none; position: absolute; top: 510px; left: 350px; white-space: nowrap; font-family: Arial; font-size: 12px; font-weight: bold;">Low Clinical Impact</div></div>
+					<div id="vis_mod"><div dir="ltr" style="position: relative; width: 255px; height: 500px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="245" height="500" style="overflow: hidden;"><defs id="defs"></defs><g style="cursor: default;"><rect x="5" y="20" width="118" height="159" stroke="#ffffff" stroke-width="1" fill="#88ff00"></rect><text text-anchor="middle" x="64" y="103.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">FUT2-W154X</text></g><g style="cursor: default;"><rect x="123" y="20" width="117" height="159" stroke="#ffffff" stroke-width="1" fill="#f5867a"></rect><text text-anchor="middle" x="181.5" y="103.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">MYO1A-S797F</text></g><g style="cursor: default;"><rect x="5" y="179" width="235" height="79" stroke="#ffffff" stroke-width="1" fill="#f5867a"></rect><text text-anchor="middle" x="122.5" y="222.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">WFS1-C426Y</text></g><g style="cursor: default;"><rect x="5" y="258" width="235" height="79" stroke="#ffffff" stroke-width="1" fill="#f5867a"></rect><text text-anchor="middle" x="122.5" y="301.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">SIAE-M89V</text></g><g style="cursor: default;"><rect x="5" y="337" width="118" height="158" stroke="#ffffff" stroke-width="1" fill="#f5867a"></rect><text text-anchor="middle" x="64" y="420.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">FIG4-K278Shift</text></g><g style="cursor: default;"><rect x="123" y="337" width="117" height="158" stroke="#ffffff" stroke-width="1" fill="#f76659"></rect><text text-anchor="middle" x="181.5" y="420.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">C3-R102G</text></g><g style="cursor: pointer;"><rect x="5" y="0" width="235" height="20" stroke="#ffffff" stroke-width="1" fill="#cccccc"></rect><text text-anchor="middle" x="122.5" y="14.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">Medium Clinical Impact</text></g><g><rect x="120.5" y="17.5" width="122" height="164" stroke="#ffffff" stroke-width="5" stroke-opacity="0.2" fill-opacity="1" fill="none"></rect><rect x="121" y="18" width="121" height="163" stroke="#ffffff" stroke-width="4" stroke-opacity="0.4" fill-opacity="1" fill="none"></rect><rect x="121.5" y="18.5" width="120" height="162" stroke="#ffffff" stroke-width="3" stroke-opacity="0.6" fill-opacity="1" fill="none"></rect></g></svg></div></div><div style="display: none; position: absolute; top: 510px; left: 265px; white-space: nowrap; font-family: Arial; font-size: 12px; font-weight: bold;">Medium Clinical Impact</div></div>
+					<div id="vis_high"><div dir="ltr" style="position: relative; width: 170px; height: 500px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="160" height="500" style="overflow: hidden;"><defs id="defs"></defs><g style="cursor: default;"><rect x="5" y="20" width="150" height="159" stroke="#ffffff" stroke-width="1" fill="#f0887f"></rect><text text-anchor="middle" x="80" y="103.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">BBS7-D412G</text></g><g style="cursor: default;"><rect x="5" y="179" width="150" height="158" stroke="#ffffff" stroke-width="1" fill="#f0887f"></rect><text text-anchor="middle" x="80" y="262.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">RYR2-G1885E</text></g><g style="cursor: default;"><rect x="5" y="337" width="150" height="158" stroke="#ffffff" stroke-width="1" fill="#ff4433"></rect><text text-anchor="middle" x="80" y="420.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#000000">SERPINA1-E366K</text></g><g style="cursor: pointer;"><rect x="5" y="0" width="150" height="20" stroke="#ffffff" stroke-width="1" fill="#cccccc"></rect><text text-anchor="middle" x="80" y="14.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">High Clinical Impact</text></g><g><rect x="2.5" y="17.5" width="155" height="164" stroke="#ffffff" stroke-width="5" stroke-opacity="0.2" fill-opacity="1" fill="none"></rect><rect x="3" y="18" width="154" height="163" stroke="#ffffff" stroke-width="4" stroke-opacity="0.4" fill-opacity="1" fill="none"></rect><rect x="3.5" y="18.5" width="153" height="162" stroke="#ffffff" stroke-width="3" stroke-opacity="0.6" fill-opacity="1" fill="none"></rect></g></svg></div></div><div style="display: none; position: absolute; top: 510px; left: 180px; white-space: nowrap; font-family: Arial; font-size: 12px; font-weight: bold;">High Clinical Impact</div></div>
+				</div>
+
+				<h2>Questions About the Report</h2>
+				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
+				<form action="vis_task.php" method="post" id="v1_q">
+					
+					<label for="v1_q1"><strong>The number of variants with low clinical importance:</strong></label><p>
+					<input type="text" name="v1_q1" id="v1_q1"></p><p>
+					
+					<label for="v1_q2"><strong>The number of variants with high clinical importance:</strong></label></p><p>
+					<input type="text" name="v1_q2" id="v1_q2"></p><p>
+					
+					<label for="v1_q3"><strong>The number of variants tat are well-established pathogenic:</strong></label></p><p>
+					<input type="text" name="v1_q3" id="v1_q3"></p>
+
+					<label for="v1_q4"><strong>The number of variants tat are uncertain pathogenic:</strong></label></p><p>
+					<input type="text" name="v1_q4" id="v1_q4"></p>
+
+					<p><strong>True or false: The number of potentially pathogenic variants in Jamie's report is higher than the number of potentially benign or protective variants</strong></p><p>
+					
+					<label class="radio" for="v1_q5_T">
+						<input type="radio" name="v1_q5" id="v1_q5_T" value="True">True
+					</label></p><p>
+					<label class="radio" for="v1_q5_F">
+						<input type="radio" name="v1_q5" id="v1_q5_F" value="False">False
+					</label></p><p>
+
+
+					<p><strong>Which of the following variants would Jaime be most likely to discuss with a healthcare provider?</strong></p><p>
+					
+					<label class="radio" for="v1_q6_A">
+						<input type="radio" name="v1_q6" id="v1_q6_A" value="rs1544410">rs1544410
+					</label></p><p>
+					<label class="radio" for="v1_q6_B">
+						<input type="radio" name="v1_q6" id="v1_q6_B" value="SERPINA1-E366K">SERPINA1-E366K
+					</label></p><p>
+					<label class="radio" for="v1_q6_C">
+						<input type="radio" name="v1_q6" id="v1_q6_C" value="MTRR-I49M">MTRR-I49M
+					</label></p><p>
+					<label class="radio" for="v1_q6_D">
+						<input type="radio" name="v1_q6" id="v1_q6_D" value="CACNA1S-L458H">CACNA1S-L458H
+					</label></p><p>
+
+					<p><strong>Is Jamie's risk of developing stomach flu greater than, equal to, or less than the average person?</strong></p><p>
+					<label class="radio" for="v1_q7_A">
+						<input type="radio" name="v1_q7" id="v1_q7_A" value="greater">Greater than
+					</label></p><p>
+					<label class="radio" for="v1_q7_B">
+						<input type="radio" name="v1_q7" id="v1_q7_B" value="equal">Equal
+					</label></p><p>
+					<label class="radio" for="v1_q7_C">
+						<input type="radio" name="v1_q7" id="v1_q7_C" value="less">Less than
+					</label></p><p>
+					<label class="radio" for="v1_q7_D">
+						<input type="radio" name="v1_q7" id="v1_q7_D" value="dunno">I don't know
+					</label></p><p>
+
+					<p><strong>Based on the information above, is Jamie's risk of developing age-related macular degeneration greater than, equal to, or less than the average person?</strong></p><p>
+					<label class="radio" for="v1_q8_A">
+						<input type="radio" name="v1_q8" id="v1_q8_A" value="greater">Greater than
+					</label></p><p>
+					<label class="radio" for="v1_q8_B">
+						<input type="radio" name="v1_q8" id="v1_q8_B" value="equal">Equal
+					</label></p><p>
+					<label class="radio" for="v1_q8_C">
+						<input type="radio" name="v1_q8" id="v1_q8_C" value="less">Less than
+					</label></p><p>
+					<label class="radio" for="v1_q8_D">
+						<input type="radio" name="v1_q8" id="v1_q8_D" value="dunno">I don't know
+					</label></p><p>
+
+					<p><strong>If you were Jamie, knowing this information, which of the following conditions would you be interested in learning more about? Select all that apply.</strong></p>
+					<label class="checkbox" for="v1_q9_A">
+						<input type="checkbox" name="v1_q9" id="v1_q9_A" value="alzheimers">Alzheimer's
+					</label></p><p>
+					<label class="checkbox" for="v1_q9_B">
+						<input type="checkbox" name="v1_q9" id="v1_q9_B" value="parkinsons">Parkinson's
+					</label></p><p>
+					<label class="checkbox" for="v1_q9_C">
+						<input type="checkbox" name="v1_q9" id="v1_q9_C" value="liver">Liver Disease
+					</label></p><p>
+					<label class="checkbox" for="v1_q9_D">
+						<input type="checkbox" name="v1_q9" id="v1_q9_D" value="colon">Colon Cancer
+					</label></p><p>
+					<label class="checkbox" for="v1_q9_E">
+						<input type="checkbox" name="v1_q9" id="v1_q9_E" value="diabetes">Diabetes
+					</label></p><p>
+					<label class="checkbox" for="v1_q9_F">
+						<input type="checkbox" name="v1_q9" id="v1_q9_F" value="emphysema">Emphysema
+					</label></p><p>
+					<label class="checkbox" for="v1_q9_G">
+						<input type="checkbox" name="v1_q9" id="v1_q9_G" value="tuberculosis">Tuberculosis
+					</label></p><p>
+					<label class="checkbox" for="v1_q9_H">
+						<input type="checkbox" name="v1_q9" id="v1_q9_H" value="eye">Eye Disease
+					</label></p><p>
+
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr>
+								<th><strong>Statement</strong></th>
+								<th><strong>Strongly disagree</strong></th>
+								<th><strong>Disagree</strong></th>
+								<th><strong>Somewhat disagree</strong></th>
+								<th><strong>Neither agree or disagree</strong></th>
+								<th><strong>Somewhat agree</strong></th>
+								<th><strong>Agree</strong></th>
+								<th><strong>Strongly Agree</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>The information in the report was presented in a very clear and accessible manner.</td>
+								<td><input type="radio" name="v1_q10_a" value="1"></td>
+								<td><input type="radio" name="v1_q10_a" value="2"></td>
+								<td><input type="radio" name="v1_q10_a" value="3"></td>
+								<td><input type="radio" name="v1_q10_a" value="4"></td>
+								<td><input type="radio" name="v1_q10_a" value="5"></td>
+								<td><input type="radio" name="v1_q10_a" value="6"></td>
+								<td><input type="radio" name="v1_q10_a" value="7"></td>
+							</tr>
+							<tr>
+								<td>The results in the report make sense to me and I feel I understand all of it.</td>
+								<td><input type="radio" name="v1_q10_b" value="1"></td>
+								<td><input type="radio" name="v1_q10_b" value="2"></td>
+								<td><input type="radio" name="v1_q10_b" value="3"></td>
+								<td><input type="radio" name="v1_q10_b" value="4"></td>
+								<td><input type="radio" name="v1_q10_b" value="5"></td>
+								<td><input type="radio" name="v1_q10_b" value="6"></td>
+								<td><input type="radio" name="v1_q10_b" value="7"></td>
+							</tr>
+							<tr>
+								<td>The results in the report make very little sense to me and I do not feel I understand it.</td>
+								<td><input type="radio" name="v1_q10_c" value="1"></td>
+								<td><input type="radio" name="v1_q10_c" value="2"></td>
+								<td><input type="radio" name="v1_q10_c" value="3"></td>
+								<td><input type="radio" name="v1_q10_c" value="4"></td>
+								<td><input type="radio" name="v1_q10_c" value="5"></td>
+								<td><input type="radio" name="v1_q10_c" value="6"></td>
+								<td><input type="radio" name="v1_q10_c" value="7"></td>
+							</tr>
+							<tr>
+								<td>I will need the help of a healthcare professional to understand the results in the report.</td>
+								<td><input type="radio" name="v1_q10_d" value="1"></td>
+								<td><input type="radio" name="v1_q10_d" value="2"></td>
+								<td><input type="radio" name="v1_q10_d" value="3"></td>
+								<td><input type="radio" name="v1_q10_d" value="4"></td>
+								<td><input type="radio" name="v1_q10_d" value="5"></td>
+								<td><input type="radio" name="v1_q10_d" value="6"></td>
+								<td><input type="radio" name="v1_q10_d" value="7"></td>
+							</tr>
+							<tr>
+								<td>I intend to show the results in the report to my doctor next time I see them.</td>
+								<td><input type="radio" name="v1_q10_e" value="1"></td>
+								<td><input type="radio" name="v1_q10_e" value="2"></td>
+								<td><input type="radio" name="v1_q10_e" value="3"></td>
+								<td><input type="radio" name="v1_q10_e" value="4"></td>
+								<td><input type="radio" name="v1_q10_e" value="5"></td>
+								<td><input type="radio" name="v1_q10_e" value="6"></td>
+								<td><input type="radio" name="v1_q10_e" value="7"></td>
+							</tr>
+							<tr>
+								<td>I intend to schedule a special appointment with my doctor and discuss the results in the report with them.</td>
+								<td><input type="radio" name="v1_q10_f" value="1"></td>
+								<td><input type="radio" name="v1_q10_f" value="2"></td>
+								<td><input type="radio" name="v1_q10_f" value="3"></td>
+								<td><input type="radio" name="v1_q10_f" value="4"></td>
+								<td><input type="radio" name="v1_q10_f" value="5"></td>
+								<td><input type="radio" name="v1_q10_f" value="6"></td>
+								<td><input type="radio" name="v1_q10_f" value="7"></td>
+							</tr>
+							<tr>
+								<td>I intend to read more about the health issues concerning the results in the report I got.</td>
+								<td><input type="radio" name="v1_q10_g" value="1"></td>
+								<td><input type="radio" name="v1_q10_g" value="2"></td>
+								<td><input type="radio" name="v1_q10_g" value="3"></td>
+								<td><input type="radio" name="v1_q10_g" value="4"></td>
+								<td><input type="radio" name="v1_q10_g" value="5"></td>
+								<td><input type="radio" name="v1_q10_g" value="6"></td>
+								<td><input type="radio" name="v1_q10_g" value="7"></td>
+							</tr>
+							<tr>
+								<td>I intend to share the results in the report with family members.</td>
+								<td><input type="radio" name="v1_q10_h" value="1"></td>
+								<td><input type="radio" name="v1_q10_h" value="2"></td>
+								<td><input type="radio" name="v1_q10_h" value="3"></td>
+								<td><input type="radio" name="v1_q10_h" value="4"></td>
+								<td><input type="radio" name="v1_q10_h" value="5"></td>
+								<td><input type="radio" name="v1_q10_h" value="6"></td>
+								<td><input type="radio" name="v1_q10_h" value="7"></td>
+							</tr>
+							<tr>
+								<td>Starting today, I intend to change my diet.</td>
+								<td><input type="radio" name="v1_q10_i" value="1"></td>
+								<td><input type="radio" name="v1_q10_i" value="2"></td>
+								<td><input type="radio" name="v1_q10_i" value="3"></td>
+								<td><input type="radio" name="v1_q10_i" value="4"></td>
+								<td><input type="radio" name="v1_q10_i" value="5"></td>
+								<td><input type="radio" name="v1_q10_i" value="6"></td>
+								<td><input type="radio" name="v1_q10_i" value="7"></td>
+							</tr>
+							<tr>
+								<td>Starting today, I intend to do more physical activity.</td>
+								<td><input type="radio" name="v1_q10_j" value="1"></td>
+								<td><input type="radio" name="v1_q10_j" value="2"></td>
+								<td><input type="radio" name="v1_q10_j" value="3"></td>
+								<td><input type="radio" name="v1_q10_j" value="4"></td>
+								<td><input type="radio" name="v1_q10_j" value="5"></td>
+								<td><input type="radio" name="v1_q10_j" value="6"></td>
+								<td><input type="radio" name="v1_q10_j" value="7"></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<label for="v1_q11">Please use the space below to tell us how the report might lead you to take actions (such as changing your diet, exercising more, or sharing the information with your doctor), and why.</label></p><p>
+					<textarea name="v1_q11" id="v1_q11" cols="30" rows="5"></textarea>
+					</p><p>
+					
+					<input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" id="Submit_v1">
+				</p></form>
+			</div>
+			<div class="alert alert-block" id="validate_msg" style="display: none;"></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%">Null</div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/IL7R-T244I" target="_blank">IL7R-T244I</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Likely protective <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 21% <br><em>Summary</em>: The reference genome variant for this allele has been associated with a slight increased risk of multiple sclerosis. Thus, this variant can be treated as a "protective" variant -- carriers of this variant are slightly less likely to have MS. Because the disease is rare and the effect of this variant is not very strong, the absolute decreased risk for carriers of this variant is less than .05% (less than 1 in 2000). <br> <a href="http://evidence.personalgenomes.org/IL7R-T244I" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/KCNJ11-K23E" target="_blank">KCNJ11-K23E</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Likely protective <br><em>Status</em>: Unknown, Homozygous <br><em>Allele Frequency</em>: 74% <br><em>Summary</em>: This variant is associated with decreased risk of type 2 diabetes. It is unclear whether this variant has additive effects, or acts in a dominant or recessive manner. Assuming diabetes has a lifetime risk of 36%, we estimate a decreased risk of around 1-2% per copy of this variant. <br> <a href="http://evidence.personalgenomes.org/KCNJ11-K23E" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/ARSA-N350S" target="_blank">ARSA-N350S</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Well-established benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 18% <br><em>Summary</em>: This common variant (HapMap 24.1% allele frequency) causes a loss of a glycosylation site (affecting the size of the protein when studied with gel electrophoresis) but does not affect enzyme activity or stability. <br> <a href="http://evidence.personalgenomes.org/ARSA-N350S" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/MSH2-G322D" target="_blank">MSH2-G322D</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Likely benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 1.1% <br><em>Summary</em>: Although other variants in this mismatch repair gene are associated with cancer, most publications dismiss this variant as a polymorphism (HapMap allele frequency of 1.6%). <br> <a href="http://evidence.personalgenomes.org/MSH2-G322D" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/CACNA1S-L458H" target="_blank">CACNA1S-L458H</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Likely benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 27% <br><em>Summary</em>: Common polymorphism <br> <a href="http://evidence.personalgenomes.org/CACNA1S-L458H" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/ADA-K80R" target="_blank">ADA-K80R</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Likely benign <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 6.4% <br><em>Summary</em>: This variant has a 3.5% allele frequency in 1000 genomes data. Although OMIM links this to disease, the paper they reference uses in vitro data to conclude that this is a functionally neutral polymorphism. <br> <a href="http://evidence.personalgenomes.org/ADA-K80R" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/COL9A2-T246M" target="_blank">COL9A2-T246M</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Likely benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 2.5% <br><em>Summary</em>: Probably benign. <br> <a href="http://evidence.personalgenomes.org/COL9A2-T246M" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/FANCI-P55L" target="_blank">FANCI-P55L</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Likely benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 5.1% <br><em>Summary</em>: Probably benign. <br> <a href="http://evidence.personalgenomes.org/FANCI-P55L" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/PKD1-A4059V" target="_blank">PKD1-A4059V</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Likely benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 5.7% <br><em>Summary</em>: Probably benign. <br> <a href="http://evidence.personalgenomes.org/PKD1-A4059V" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; visibility: hidden; left: 283px; top: 251px; display: none;" class="charts-tooltip"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/LIG4-A3V" target="_blank">LIG4-A3V</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain protective <br><em>Status</em>: Dominant, Heterozygous <br><em>Allele Frequency</em>: 3.6% <br><em>Summary</em>: One report has associated this with a decreased risk of multiple myeloma. <br> <a href="http://evidence.personalgenomes.org/LIG4-A3V" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/DTNBP1-P272S" target="_blank">DTNBP1-P272S</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain protective <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 3.5% <br><em>Summary</em>: Possibly a slight protective effect against colorectal cancer if homozygous. <br> <a href="http://evidence.personalgenomes.org/DTNBP1-P272S" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/COL5A2-P460S" target="_blank">COL5A2-P460S</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 4% <br><em>Summary</em>: Tentatively benign. Although predicted to be damaging by Polyphen 2, this variant is seen in 2 out of 62 PGP &amp; public genomes. OMIM lists other more disruptive variants (frameshift &amp; nonsense) as reported to cause Ehlers-Danlos syndrome when homozygous. <br> <a href="http://evidence.personalgenomes.org/COL5A2-P460S" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/CASP8-M1T" target="_blank">CASP8-M1T</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 3.1% <br><em>Summary</em>: Probably benign. Although start codons can be extremely disruptive and this gene is implicated in a rare disease (autoimmune lymphoproliferative syndrome), the allele frequency for this variant (2-3%) is high enough to contradict such a strong pathogenic effect. This may be because the gene has many other transcripts that do not include this position as exonic. <br> <a href="http://evidence.personalgenomes.org/CASP8-M1T" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; visibility: hidden; left: 247px; top: 279px; display: none;" class="charts-tooltip"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/PKP2-L366P" target="_blank">PKP2-L366P</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 22% <br><em>Summary</em>: This variant is a benign polymorphism.   <br> <a href="http://evidence.personalgenomes.org/PKP2-L366P" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/RP1-N985Y" target="_blank">RP1-N985Y</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Homozygous <br><em>Allele Frequency</em>: 35% <br><em>Summary</em>: Probably benign. One report linked this variant to high triglycerides, but a later paper found a nearby SNP with similar association and suggests that both findings are caused by linkage to an undiscovered causal variant. <br> <a href="http://evidence.personalgenomes.org/RP1-N985Y" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/DSP-R1537C" target="_blank">DSP-R1537C</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 1% <br><em>Summary</em>: Probably benign / nonpathogenic. <br> <a href="http://evidence.personalgenomes.org/DSP-R1537C" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/ELN-G581R" target="_blank">ELN-G581R</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 7.3% <br><em>Summary</em>: Probably a benign SNP, not rare (4.8% allele frequency in GET-Evidence data). <br> <a href="http://evidence.personalgenomes.org/ELN-G581R" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/LYST-R159K" target="_blank">LYST-R159K</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 0.78% <br><em>Summary</em>: Rare and unreported, tentatively evaluated as benign. Some severe mutations in this gene cause Chediak-Higashi syndrome (a severe genetic disorder causing albinism, neuropathy, and life-threatening susceptibility to bacterial infections), but this disease is rare and there are many other genomes with rare missense polymorphisms. <br> <a href="http://evidence.personalgenomes.org/LYST-R159K" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/MAPT-R370W" target="_blank">MAPT-R370W</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Homozygous <br><em>Allele Frequency</em>: 16% <br><em>Summary</em>: Probably benign. <br> <a href="http://evidence.personalgenomes.org/MAPT-R370W" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/TCIRG1-R56W" target="_blank">TCIRG1-R56W</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 4.4% <br><em>Summary</em>: Probably benign. One publication implicates the variant in causing osteopetrosis, but this is contradicted by the relatively high allele frequency for the variant in Caucasians (5%, 1 in 400 homozygous) while that disease is extremely rare (1 in 250,000). <br> <a href="http://evidence.personalgenomes.org/TCIRG1-R56W" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/PTCH1-P1315L" target="_blank">PTCH1-P1315L</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 30% <br><em>Summary</em>: Common polymorphism, presumed benign. <br> <a href="http://evidence.personalgenomes.org/PTCH1-P1315L" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/TXNDC3-I338T" target="_blank">TXNDC3-I338T</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Homozygous <br><em>Allele Frequency</em>: 3.8% <br><em>Summary</em>: Tentatively classified as benign, but predicted to be damaging and other variants in this gene are implicated in causing primary ciliary dyskinesia (situs inversus, chronic sinusitis, and bronchiectasis). <br> <a href="http://evidence.personalgenomes.org/TXNDC3-I338T" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/MUSK-T100M" target="_blank">MUSK-T100M</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain benign <br><em>Status</em>: Unknown, Heterozygous <br><em>Allele Frequency</em>: 2.3% <br><em>Summary</em>: Probably benign. <br> <a href="http://evidence.personalgenomes.org/MUSK-T100M" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/WFS1-R611H" target="_blank">WFS1-R611H</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain not reviewed <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 40% <br><em>Summary</em>: This nonsynonymous SNP is associated with Wolfram Syndrome (known as DIDMOAD), which is characterized by early-onset non-autoimmune diabetes mellitus, diabetes insipidus, optic atrophy, and deafness) and to adult Type Two Diabetes Mellitus.  The WFS1 gene maps to chromosome 4p16.3.  The variant has been shown to be statistically associated with type II diabetes in six UK studies and one study of Ashkenazi Jews (Sandhu, M., et al., Minton et al.). <br> <a href="http://evidence.personalgenomes.org/WFS1-R611H" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/RNASEL-R462Q" target="_blank">RNASEL-R462Q</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Complex/Other, Heterozygous <br><em>Allele Frequency</em>: 28% <br><em>Summary</em>: Associated with increased risk of prostate cancer in individuals who already have a family history of prostate cancer, but studies have been unable to replicate this finding in sporadic (non-familial) prostate cancer cases. <br> <a href="http://evidence.personalgenomes.org/RNASEL-R462Q" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/TGIF1-P83Shift" target="_blank">TGIF1-P83Shift</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Complex/Other, Homozygous <br><em>Allele Frequency</em>: 14% <br><em>Summary</em>: Severe variants in this gene are associated with holoprosencephaly disorders when combined with loss-of-function variants in SHH. Haploinsufficiency was identified in some families with this condition. It is unclear how likely this variant is to occur in combination with an SHH variant, or what phenotypic effect the variant would have on its own. <br> <a href="http://evidence.personalgenomes.org/TGIF1-P83Shift" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/TLR5-R392X" target="_blank">TLR5-R392X</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Complex/Other, Heterozygous <br><em>Allele Frequency</em>: 4.4% <br><em>Summary</em>: This variant is believed to impair the ability to generate an immune response to the flagella of the bacteria. It is weakly associated with an increased incidence of Legionnaires\' Disease, p = 0.085, increased lifetime risk of disease ~0.88% (about twice average). The variant is also weakly associated with a reduced incidence of systemic lupus erythematosus, p = 0.165. <br> <a href="http://evidence.personalgenomes.org/TLR5-R392X" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/SP110-L425S" target="_blank">SP110-L425S</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Unknown, Homozygous <br><em>Allele Frequency</em>: 86% <br><em>Summary</em>: This variant is associated with a slightly increased risk of tuberculosis. It is unclear whether it is itself causal, or in linkage disequilibrium with some other causal variant that has a stronger effect. <br> <a href="http://evidence.personalgenomes.org/SP110-L425S" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/HFE-H63D" target="_blank">HFE-H63D</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 11% <br><em>Summary</em>: There have been some hypotheses that this variant contributes to causing hereditary hemochromatosis, possibly as a compound heterozygote, but some others treat it as a polymorphism. Cys282Tyr is the classic causal variant and itself has very low penetrance. Mouse studies indicates this variant has a similar but weaker effect; if it has any effect at all its penetrance may be quite low and/or require modifier alleles. <br> <a href="http://evidence.personalgenomes.org/HFE-H63D" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; visibility: visible; left: 253px; top: 826px;" class="charts-tooltip"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/ACAD8-S171C" target="_blank">ACAD8-S171C</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 1.8% <br><em>Summary</em>: This variant (a.k.a S149C) was found as a compound heterozygote (with M130T) in a male newborn of European descent with isobutyryl-CoA dehydrogenase deficiency (identified by newborn screening). Lack of controls means that significance cannot be established and allele frequency cannot be estimated. Oglesbee et al. comment that IBD-deficiency may be relatively benign, most cases identified by newborn screening have remained asymptomatic, but Ferreira et al. report a symptomatic individual homozygous for this variant. <br> <a href="http://evidence.personalgenomes.org/ACAD8-S171C" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/MTRR-I49M" target="_blank">MTRR-I49M</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Likely pathogenic <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 45% <br><em>Summary</em>: This common variant (HapMap allele frequency of 31.3%) in a protein involved in folate (B9) and cobalamin (B12) metabolism and is often reported as "MTRR I22M" (an alternative transcript position). Mothers homozygous for this variant are associated with having around a increased chance of a child with Down syndrome (risk of 0.4%, average risk in population is 0.25%). Notably, age plays a far larger role in the rate of Down syndrome (risk is 4.5% for a mother 45-years-of-age), and it is unknown how this variant may combine with the effect of age. There are conflicting reports associating this variant with incidence of neural tube defects, possibly when combined with MTHFR A222V. <br> <a href="http://evidence.personalgenomes.org/MTRR-I49M" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/SERPINA1-E288V" target="_blank">SERPINA1-E288V</a><br><em>Clinical Importance</em>: Low <br><em>Impact</em>: Well-established pathogenic <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 3% <br><em>Summary</em>: This variant represents the PiS variant in alpha-1-antitrypsin deficiency where a homozygous individual has 60% enzymatic activity. This variant alone is unlikely to much effect, but 3-4% of heterozygotes are compound heterozygous with the more severe PiZ variant, which is associated with an increased risk of emphysema and COPD. <br> <a href="http://evidence.personalgenomes.org/SERPINA1-E288V" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; visibility: hidden; left: 523px; top: 238px; display: none;" class="charts-tooltip"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%">Null</div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/FUT2-W154X" target="_blank">FUT2-W154X</a><br><em>Clinical Importance</em>: Moderate <br><em>Impact</em>: Well-established protective <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 49% <br><em>Summary</em>: This recessive protective variant confers resistance to norovirus (which causes stomach flu). 20% of Caucasians and Africans are homozygous for this variant and are "non-secretors": they do not express ABO blood type antigens in their saliva or mucosal surfaces. Most strains of norovirus bind to these antigens in the gut, and so this non-secretor status confers almost total resistantance to most types of norovirus. There are notable exceptions, some strains of norovirus bind a different target and are equally infectious for secretors and non-secretors. <br> <a href="http://evidence.personalgenomes.org/FUT2-W154X" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/MYO1A-S797F" target="_blank">MYO1A-S797F</a><br><em>Clinical Importance</em>: Moderate <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Dominant, Heterozygous <br><em>Allele Frequency</em>: 0.47% <br><em>Summary</em>: Although reported to cause dominant, early-onset sensorineural hearing loss, this variant has been reported in the genome of an unaffected PGP participant. <br> <a href="http://evidence.personalgenomes.org/MYO1A-S797F" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/WFS1-C426Y" target="_blank">WFS1-C426Y</a><br><em>Clinical Importance</em>: Moderate <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Dominant, Heterozygous <br><em>Allele Frequency</em>: 0.12% <br><em>Summary</em>: Reported in a single case of familial depression, but no linkage data and no statistical significance. <br> <a href="http://evidence.personalgenomes.org/WFS1-C426Y" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/SIAE-M89V" target="_blank">SIAE-M89V</a><br><em>Clinical Importance</em>: Moderate <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 4% <br><em>Summary</em>: This variant was reported to be associated with autoimmune disease when homozygous. However, a later publication has contradicted this result, finding no significant association between this variant and autoimmune disease in a very large cohort. <br> <a href="http://evidence.personalgenomes.org/SIAE-M89V" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/FIG4-K278Shift" target="_blank">FIG4-K278Shift</a><br><em>Clinical Importance</em>: Moderate <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 0.78% <br><em>Summary</em>: This variant is predicted to cause a frameshift and may cause Charcot-Marie-Tooth Disease Type 4J in an autosomal recessive manner. Other variants in this gene which cause frameshift and premature termination have been implicated in causing this disease when compound heterozygous with another FIG4 variant. <br> <a href="http://evidence.personalgenomes.org/FIG4-K278Shift" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/C3-R102G" target="_blank">C3-R102G</a><br><em>Clinical Importance</em>: Moderate <br><em>Impact</em>: Likely pathogenic <br><em>Status</em>: Complex/Other, Heterozygous <br><em>Allele Frequency</em>: 15% <br><em>Summary</em>: This variant (also called C3F) is common in Europeans (10.2% allele frequency), and is associated with age-related macular degeneration. In the US, 1.5% of adults over 40 have the disease, but the incidence increases strongly with age (&gt;15% in women over 80). Assuming an average lifetime risk of ~10%, heterozygous individuals have a ~13% risk and homozygous have ~20%. <br> <a href="http://evidence.personalgenomes.org/C3-R102G" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; visibility: hidden; left: 370px; top: 238px; display: none;" class="charts-tooltip"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%">Null</div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/BBS7-D412G" target="_blank">BBS7-D412G</a><br><em>Clinical Importance</em>: High <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 0.2% <br><em>Summary</em>: Predicted to have damaging effect, other mutations in this gene have been implicated in causing Bardet-Biedl syndrome in a recessive manner. <br> <a href="http://evidence.personalgenomes.org/BBS7-D412G" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/RYR2-G1885E" target="_blank">RYR2-G1885E</a><br><em>Clinical Importance</em>: High <br><em>Impact</em>: Uncertain pathogenic <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 1.8% <br><em>Summary</em>: Reported to cause arrhythmogenic right ventricular cardiomyopathy when compound heterozygous with G1886S, although this finding is weakened after correcting for multiple hypotheses and it is unclear what penetrance such a genotype might have, if it is causal. <br> <a href="http://evidence.personalgenomes.org/RYR2-G1885E" target="_blank">[click here for more information]</a></p></div></div><div style="position: absolute; display: none;"><div style="background:#fd9; padding:10px; border-style:solid; width: 300px; font-size:70%"><p><em>Variant Name</em>: <a href="http://evidence.personalgenomes.org/SERPINA1-E366K" target="_blank">SERPINA1-E366K</a><br><em>Clinical Importance</em>: High <br><em>Impact</em>: Well-established pathogenic <br><em>Status</em>: Recessive, Carrier (Heterozygous) <br><em>Allele Frequency</em>: 1.2% <br><em>Summary</em>: This is also called the "Pi Z" or "Z" allele. When homozygous (acting in a recessive manner) this variant is the major cause of severe alpha-1-antitrypsin deficiency (95% of cases) which often leads to emphysema or chronic obstructive pulmonary disease (COPD) and liver disease in adults and children. Heterozygosity for this variant may also be associated with increased rate of lung or liver problems, especially when combined with another variant with reduced function (compound heterozygous). <br> <a href="http://evidence.personalgenomes.org/SERPINA1-E366K" target="_blank">[click here for more information]</a></p></div></div>
+		
+	</body>
+	</html>
