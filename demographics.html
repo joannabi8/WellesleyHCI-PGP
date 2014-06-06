@@ -17,7 +17,7 @@
 			$(function(){
 				//Populate form
 				$(function() {
-					var formData = {"preQ_id":"72","signature":"aaa","q0":null,"q1":null,"q2":null,"q3":null,"q4":null,"q5":null,"q6a":null,"q6b":null,"q6c":null,"q6d":null,"q6e":null,"q6f":null,"q6g":null,"q7":null,"q8":null,"q9a":null,"q9b":null,"q9c":null,"q9d":null,"q9e":null,"q9f":null,"q9g":null,"q9h":null,"q9i":null,"q9j":null,"q10":null,"q11":null,"q12":null,"q13":null,"personID":null,"time_elapsed":null};
+					var formData = {"preQ_id":"72","signature":"aaa","q0":null,"q1":null,"q2":null,"q3":null,"q4":null,"q5":null,"q6":null, personID":null,"time_elapsed":null};
 					console.log(formData);
 					if (formData != null) {
 						$.each(formData, function(key,val) {
@@ -74,7 +74,7 @@
 	</div>
 	
 	<div class="container" id="study_wrapper">
-	<form id="preQ_form" method="POST" action=/~hcilab/pghci_for_get/questions.php><ol>
+	<form id="preQ_form" method="POST" action=/~hcilab/pghci_for_get/response.html><ol>
 		<input type="submit" name="submit" value="Back to consent" class="submit_top">
 		<input type="submit" name="submit" value="Continue to report" class="submit_top">
 				<p>Your participant ID is 6a9384.
@@ -100,64 +100,14 @@
 		<li>Do you work in the life sciences?<br>
 			<label><input type="radio" name="q5" required value="yes">Yes</label>
 			<label><input type="radio" name="q5" value="no">No</label>
-		<li>Personal genetic information available for you: 
-			<input type="hidden" name="q6a">
-			<label><input type="checkbox" name="q6a" value="complete genomics">Complete genomics</label>
-			<input type="hidden" name="q6b">
-			<label><input type="checkbox" name="q6b" value="23andme">23andMe</label>
-			<input type="hidden" name="q6c">
-			<label><input type="checkbox" name="q6c" value="microbiome">Microbiome</label>
-			<input type="hidden" name="q6d">
-			<label><input type="checkbox" name="q6d" value="illumina">Illumina</label>
-			<input type="hidden" name="q6e">
-			<label><input type="checkbox" name="q6e" value="family tree dna">Family Tree DNA</label>
-			<input type="hidden" name="q6f">
-			<label><input type="checkbox" name="q6f" value="none available">None available</label>
-			Other: <input type="text" name="q6g" id="personal_genetic_info_other">
-		<li>How long ago did you receive access to your personal genomic information? 
-			<select name="q7" required>
-				<option value="1-2 months ago">1-2 months ago</option>
-				<option value="3 months ago">3 months ago</option>
-				<option value="4 months ago">4 months ago</option>
-				<option value="5 months ago">5 months ago</option>
-				<option value="6 months ago">6 months ago</option>
-				<option value="more than 6 months ago">More than 6 months ago</option>
-			</select>
-		<li>Have you logged in to see the results yet? <br>
-			<label><input type="radio" name="q8" required value="yes">Yes</label>
-			<label><input type="radio" name="q8" value="no">No</label>
-		<li>Which online tools did you use to explore your results? 
-			<input type="hidden" name="q9a">
-			<label><input type="checkbox" name="q9a"  value="pgp get-evidence">PGP GET-Evidence</label>
-			<input type="hidden" name="q9b">
-			<label><input type="checkbox" name="q9b"  value="23andme health information">23andMe health information</label>
-			<input type="hidden" name="q9c">
-			<label><input type="checkbox" name="q9c"  value="23andme ancestry information">23andMe ancestry information</label>
-			<input type="hidden" name="q9d">
-			<label><input type="checkbox" name="q9d"  value="promethease">Promethease</label>
-			<input type="hidden" name="q9e">
-			<label><input type="checkbox" name="q9e"  value="snpedia">SNPedia</label>
-			<input type="hidden" name="q9f">
-			<label><input type="checkbox" name="q9f"  value="gedmatch">Gedmatch</label>
-			<input type="hidden" name="q9g">
-			<label><input type="checkbox" name="q9g"  value="ancestry dna">Ancestry DNA</label>
-			<input type="hidden" name="q9h">
-			<label><input type="checkbox" name="q9h"  value="pubmed">PubMed</label>
-			<input type="hidden" name="q9i">
-			<label><input type="checkbox" name="q9i"  value="interpretome">Interpretome</label>
-			Other: <input type="text" name="q9j" id="online_tools_textarea">
-		<li>What new or unexpected things did you learn from your personal genomic information?
-			<textarea name="q10" rows="10" cols="50"></textarea>
-		<li>What impact did your discoveries have on your life and attitude towards your health? Was there anything that you did, started doing, or stopped doing as a result of getting your personal genomic information?
-			<textarea name="q11" rows="10" cols="50"></textarea>
-		<li>Did your discoveries lead you to social or formal interactions with other people and if so who? For example, did you discuss your results with health professionals, family members, scientists, or support groups?
-			<textarea name="q12" rows="10" cols="50"></textarea>
-		<li>Overall, what were the valuable aspects of your experience exploring and sharing your personal genomic information?
-			<textarea name="q13" rows="10" cols="50"></textarea>
+		<li>Did you study life sciences at a collegiate or higher level?<br>
+			<label><input type="radio" name="q6" required value="yes">Yes</label>
+			<label><input type="radio" name="q6" value="no">No</label>
+		
 			
 		</ol>
-		<input type="submit" name="submit" value="Back to consent" id="back_preQ">
-		<input type="submit" name="submit" value="Continue to report" id="submit_preQ">
+		<input type="submit" name="submit" value="Back to Privacy" id="back_demog">
+		<input type="submit" name="submit" value="Submit" id="submit_demog">
 		</form>
 
 	</div>
