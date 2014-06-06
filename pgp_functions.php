@@ -16,6 +16,11 @@ function localConn() {
 	$dbh = db_connect($pgp_dsn);
 }
 
+// fetches a tuple from the resultset
+function fetch_row($prepared){ //prepared is a result set
+	return $result = $prepared -> fetchRow(MDB2_FETCHMODE_ASSOC);
+}
+
 // get all field values from a form
 function getUserResponse($postArray) {
 	$userResponse = array();

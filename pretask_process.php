@@ -24,10 +24,10 @@ if (!empty($_POST)) {
 	$pretaskResponse = getUserResponse($_POST);
 
 	$id = $_SESSION["user"];
-	$ip = $_SERVER["REMOTE_ADDR"] //where is "REMOTE_ADDR" var coming from?
+	$ip = $_SERVER["REMOTE_ADDR"] //documented PHP var
 
 	// Filter out used ip's
-	$ipUsed = filter_var($ip, FILTER_VALIDATE_IP) ? check_ip($ip) : true; //make sure understand this...
+	$ipUsed = filter_var($ip, FILTER_VALIDATE_IP) ? check_ip($ip) : true; //more concise 'if' clause
 
 	if (!$ipUsed) {
 		add_pretask_row($pretaskResponse);

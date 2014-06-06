@@ -6,7 +6,7 @@ SUMMER 2014
 
 <?php
 session_start();
-require_once('pgp_function.php');
+require_once('pgp_functions.php');
 $dbh;
 localConn(); //establish connection
 
