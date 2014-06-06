@@ -17,7 +17,7 @@
 <!DOCTYPE>
 <html>
 	<head>
-		<title>PGP Visualization: Table</title>
+		<title>PGP Visualization: TreeMap</title>
 
 		<!--Google TreeMap API-->
 		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
