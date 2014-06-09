@@ -674,123 +674,123 @@
 						<tbody>
 							<tr>
 								<td>The information in the report was presented in a very clear and accessible manner.</td>
-								<td><input type="radio" name="v4_q10_a" value="1"></td>
-								<td><input type="radio" name="v4_q10_a" value="2"></td>
-								<td><input type="radio" name="v4_q10_a" value="3"></td>
-								<td><input type="radio" name="v4_q10_a" value="4"></td>
-								<td><input type="radio" name="v4_q10_a" value="5"></td>
-								<td><input type="radio" name="v4_q10_a" value="6"></td>
-								<td><input type="radio" name="v4_q10_a" value="7"></td>
+								<td><input type="radio" name="v3_q10_a" value="1"></td>
+								<td><input type="radio" name="v3_q10_a" value="2"></td>
+								<td><input type="radio" name="v3_q10_a" value="3"></td>
+								<td><input type="radio" name="v3_q10_a" value="4"></td>
+								<td><input type="radio" name="v3_q10_a" value="5"></td>
+								<td><input type="radio" name="v3_q10_a" value="6"></td>
+								<td><input type="radio" name="v3_q10_a" value="7"></td>
 							</tr>
 							<tr>
 								<td>The report is easy to understand.</td>
-								<td><input type="radio" name="v4_q10_b" value="1"></td>
-								<td><input type="radio" name="v4_q10_b" value="2"></td>
-								<td><input type="radio" name="v4_q10_b" value="3"></td>
-								<td><input type="radio" name="v4_q10_b" value="4"></td>
-								<td><input type="radio" name="v4_q10_b" value="5"></td>
-								<td><input type="radio" name="v4_q10_b" value="6"></td>
-								<td><input type="radio" name="v4_q10_b" value="7"></td>
+								<td><input type="radio" name="v3_q10_b" value="1"></td>
+								<td><input type="radio" name="v3_q10_b" value="2"></td>
+								<td><input type="radio" name="v3_q10_b" value="3"></td>
+								<td><input type="radio" name="v3_q10_b" value="4"></td>
+								<td><input type="radio" name="v3_q10_b" value="5"></td>
+								<td><input type="radio" name="v3_q10_b" value="6"></td>
+								<td><input type="radio" name="v3_q10_b" value="7"></td>
 							</tr>
 							<tr>
 								<td>The report results are uncertain.</td>
-								<td><input type="radio" name="v4_q10_c" value="1"></td>
-								<td><input type="radio" name="v4_q10_c" value="2"></td>
-								<td><input type="radio" name="v4_q10_c" value="3"></td>
-								<td><input type="radio" name="v4_q10_c" value="4"></td>
-								<td><input type="radio" name="v4_q10_c" value="5"></td>
-								<td><input type="radio" name="v4_q10_c" value="6"></td>
-								<td><input type="radio" name="v4_q10_c" value="7"></td>
+								<td><input type="radio" name="v3_q10_c" value="1"></td>
+								<td><input type="radio" name="v3_q10_c" value="2"></td>
+								<td><input type="radio" name="v3_q10_c" value="3"></td>
+								<td><input type="radio" name="v3_q10_c" value="4"></td>
+								<td><input type="radio" name="v3_q10_c" value="5"></td>
+								<td><input type="radio" name="v3_q10_c" value="6"></td>
+								<td><input type="radio" name="v3_q10_c" value="7"></td>
 							</tr>
 							<tr>
 								<td>I need the help of a healthcare professional to understand the results in the report.</td>
-								<td><input type="radio" name="v4_q10_d" value="1"></td>
-								<td><input type="radio" name="v4_q10_d" value="2"></td>
-								<td><input type="radio" name="v4_q10_d" value="3"></td>
-								<td><input type="radio" name="v4_q10_d" value="4"></td>
-								<td><input type="radio" name="v4_q10_d" value="5"></td>
-								<td><input type="radio" name="v4_q10_d" value="6"></td>
-								<td><input type="radio" name="v4_q10_d" value="7"></td>
+								<td><input type="radio" name="v3_q10_d" value="1"></td>
+								<td><input type="radio" name="v3_q10_d" value="2"></td>
+								<td><input type="radio" name="v3_q10_d" value="3"></td>
+								<td><input type="radio" name="v3_q10_d" value="4"></td>
+								<td><input type="radio" name="v3_q10_d" value="5"></td>
+								<td><input type="radio" name="v3_q10_d" value="6"></td>
+								<td><input type="radio" name="v3_q10_d" value="7"></td>
 							</tr>
 							<tr>
 								<td>The scientific knowledge used to generate this report is well established.</td>
-								<td><input type="radio" name="v4_q10_e" value="1"></td>
-								<td><input type="radio" name="v4_q10_e" value="2"></td>
-								<td><input type="radio" name="v4_q10_e" value="3"></td>
-								<td><input type="radio" name="v4_q10_e" value="4"></td>
-								<td><input type="radio" name="v4_q10_e" value="5"></td>
-								<td><input type="radio" name="v4_q10_e" value="6"></td>
-								<td><input type="radio" name="v4_q10_e" value="7"></td>
+								<td><input type="radio" name="v3_q10_e" value="1"></td>
+								<td><input type="radio" name="v3_q10_e" value="2"></td>
+								<td><input type="radio" name="v3_q10_e" value="3"></td>
+								<td><input type="radio" name="v3_q10_e" value="4"></td>
+								<td><input type="radio" name="v3_q10_e" value="5"></td>
+								<td><input type="radio" name="v3_q10_e" value="6"></td>
+								<td><input type="radio" name="v3_q10_e" value="7"></td>
 							</tr>
 							<tr>
 								<td>If I were Jamie, I would show the results in the report to my doctor in my next appointment.</td>
-								<td><input type="radio" name="v4_q10_f" value="1"></td>
-								<td><input type="radio" name="v4_q10_f" value="2"></td>
-								<td><input type="radio" name="v4_q10_f" value="3"></td>
-								<td><input type="radio" name="v4_q10_f" value="4"></td>
-								<td><input type="radio" name="v4_q10_f" value="5"></td>
-								<td><input type="radio" name="v4_q10_f" value="6"></td>
-								<td><input type="radio" name="v4_q10_f" value="7"></td>
+								<td><input type="radio" name="v3_q10_f" value="1"></td>
+								<td><input type="radio" name="v3_q10_f" value="2"></td>
+								<td><input type="radio" name="v3_q10_f" value="3"></td>
+								<td><input type="radio" name="v3_q10_f" value="4"></td>
+								<td><input type="radio" name="v3_q10_f" value="5"></td>
+								<td><input type="radio" name="v3_q10_f" value="6"></td>
+								<td><input type="radio" name="v3_q10_f" value="7"></td>
 							</tr>
 							<tr>
 								<td>If I were Jamie, I would schedule a special appointment with my doctor and discuss the results in the report with them.</td>
-								<td><input type="radio" name="v4_q10_g" value="1"></td>
-								<td><input type="radio" name="v4_q10_g" value="2"></td>
-								<td><input type="radio" name="v4_q10_g" value="3"></td>
-								<td><input type="radio" name="v4_q10_g" value="4"></td>
-								<td><input type="radio" name="v4_q10_g" value="5"></td>
-								<td><input type="radio" name="v4_q10_g" value="6"></td>
-								<td><input type="radio" name="v4_q10_g" value="7"></td>
+								<td><input type="radio" name="v3_q10_g" value="1"></td>
+								<td><input type="radio" name="v3_q10_g" value="2"></td>
+								<td><input type="radio" name="v3_q10_g" value="3"></td>
+								<td><input type="radio" name="v3_q10_g" value="4"></td>
+								<td><input type="radio" name="v3_q10_g" value="5"></td>
+								<td><input type="radio" name="v3_q10_g" value="6"></td>
+								<td><input type="radio" name="v3_q10_g" value="7"></td>
 							</tr>
 							<tr>
 								<td>If I were Jamie, I would read more about the health issues concerning th results in this report.</td>
-								<td><input type="radio" name="v4_q10_h" value="1"></td>
-								<td><input type="radio" name="v4_q10_h" value="2"></td>
-								<td><input type="radio" name="v4_q10_h" value="3"></td>
-								<td><input type="radio" name="v4_q10_h" value="4"></td>
-								<td><input type="radio" name="v4_q10_h" value="5"></td>
-								<td><input type="radio" name="v4_q10_h" value="6"></td>
-								<td><input type="radio" name="v4_q10_h" value="7"></td>
+								<td><input type="radio" name="v3_q10_h" value="1"></td>
+								<td><input type="radio" name="v3_q10_h" value="2"></td>
+								<td><input type="radio" name="v3_q10_h" value="3"></td>
+								<td><input type="radio" name="v3_q10_h" value="4"></td>
+								<td><input type="radio" name="v3_q10_h" value="5"></td>
+								<td><input type="radio" name="v3_q10_h" value="6"></td>
+								<td><input type="radio" name="v3_q10_h" value="7"></td>
 							</tr>
 							<tr>
 								<td>The report helps understand Jamie's health and biology.</td>
-								<td><input type="radio" name="v4_q10_i" value="1"></td>
-								<td><input type="radio" name="v4_q10_i" value="2"></td>
-								<td><input type="radio" name="v4_q10_i" value="3"></td>
-								<td><input type="radio" name="v4_q10_i" value="4"></td>
-								<td><input type="radio" name="v4_q10_i" value="5"></td>
-								<td><input type="radio" name="v4_q10_i" value="6"></td>
-								<td><input type="radio" name="v4_q10_i" value="7"></td>
+								<td><input type="radio" name="v3_q10_i" value="1"></td>
+								<td><input type="radio" name="v3_q10_i" value="2"></td>
+								<td><input type="radio" name="v3_q10_i" value="3"></td>
+								<td><input type="radio" name="v3_q10_i" value="4"></td>
+								<td><input type="radio" name="v3_q10_i" value="5"></td>
+								<td><input type="radio" name="v3_q10_i" value="6"></td>
+								<td><input type="radio" name="v3_q10_i" value="7"></td>
 							</tr>
 							<tr>
 								<td>If I were Jamie, I would change my diet to a healthier one.</td>
-								<td><input type="radio" name="v4_q10_j" value="1"></td>
-								<td><input type="radio" name="v4_q10_j" value="2"></td>
-								<td><input type="radio" name="v4_q10_j" value="3"></td>
-								<td><input type="radio" name="v4_q10_j" value="4"></td>
-								<td><input type="radio" name="v4_q10_j" value="5"></td>
-								<td><input type="radio" name="v4_q10_j" value="6"></td>
-								<td><input type="radio" name="v4_q10_j" value="7"></td>
+								<td><input type="radio" name="v3_q10_j" value="1"></td>
+								<td><input type="radio" name="v3_q10_j" value="2"></td>
+								<td><input type="radio" name="v3_q10_j" value="3"></td>
+								<td><input type="radio" name="v3_q10_j" value="4"></td>
+								<td><input type="radio" name="v3_q10_j" value="5"></td>
+								<td><input type="radio" name="v3_q10_j" value="6"></td>
+								<td><input type="radio" name="v3_q10_j" value="7"></td>
 							</tr>
 							<tr>
 								<td>If I were Jamie, I would do more physical activity.</td>
-								<td><input type="radio" name="v4_q10_j" value="1"></td>
-								<td><input type="radio" name="v4_q10_j" value="2"></td>
-								<td><input type="radio" name="v4_q10_j" value="3"></td>
-								<td><input type="radio" name="v4_q10_j" value="4"></td>
-								<td><input type="radio" name="v4_q10_j" value="5"></td>
-								<td><input type="radio" name="v4_q10_j" value="6"></td>
-								<td><input type="radio" name="v4_q10_j" value="7"></td>
+								<td><input type="radio" name="v3_q10_j" value="1"></td>
+								<td><input type="radio" name="v3_q10_j" value="2"></td>
+								<td><input type="radio" name="v3_q10_j" value="3"></td>
+								<td><input type="radio" name="v3_q10_j" value="4"></td>
+								<td><input type="radio" name="v3_q10_j" value="5"></td>
+								<td><input type="radio" name="v3_q10_j" value="6"></td>
+								<td><input type="radio" name="v3_q10_j" value="7"></td>
 							</tr>
 							<tr>
 								<td>If I were Jamie, I would be less concered about my diet and exercise habits.</td>
-								<td><input type="radio" name="v4_q10_j" value="1"></td>
-								<td><input type="radio" name="v4_q10_j" value="2"></td>
-								<td><input type="radio" name="v4_q10_j" value="3"></td>
-								<td><input type="radio" name="v4_q10_j" value="4"></td>
-								<td><input type="radio" name="v4_q10_j" value="5"></td>
-								<td><input type="radio" name="v4_q10_j" value="6"></td>
-								<td><input type="radio" name="v4_q10_j" value="7"></td>
+								<td><input type="radio" name="v3_q10_j" value="1"></td>
+								<td><input type="radio" name="v3_q10_j" value="2"></td>
+								<td><input type="radio" name="v3_q10_j" value="3"></td>
+								<td><input type="radio" name="v3_q10_j" value="4"></td>
+								<td><input type="radio" name="v3_q10_j" value="5"></td>
+								<td><input type="radio" name="v3_q10_j" value="6"></td>
+								<td><input type="radio" name="v3_q10_j" value="7"></td>
 							</tr>
 						</tbody>
 					</table>
