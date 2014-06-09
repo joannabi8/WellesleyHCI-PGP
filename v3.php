@@ -567,25 +567,27 @@
 				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
 				<form action="vis_process.php" method="post" id="v3_q">
 					
-					<label for="v3_q1"><strong>Based on the information above, is the number of variants in Jamie's report with low clinical importance greater than, equal to, or less than the number of variants with high clinical importance?</strong></label><p>
-					<label class="radio" for="v3_q1_A">
-						<input type="radio" name="v3_q1" id="v3_q1_A" value="greater">Greater than
-					</label></p><p>
-					<label class="radio" for="v3_q1_B">
-						<input type="radio" name="v3_q1" id="v3_q1_B" value="equal">Equal
-					</label></p><p>
-					<label class="radio" for="v3_q1_C">
-						<input type="radio" name="v3_q1" id="v3_q1_C" value="less">Less than
-					</label></p><p>
-					<label class="radio" for="v3_q1_D">
-						<input type="radio" name="v3_q1" id="v3_q1_D" value="dunno">I don't know
-					</label></p><p>
 					
-					<label for="v3_q2"><strong>The number of variants with high clinical importance:</strong></label></p><p>
-					<input type="text" name="v3_q2" id="v3_q2"></p><p>
 					
-					<label for="v3_q3"><strong>The number of variants that are well-established pathogenic:</strong></label></p><p>
-					<input type="text" name="v3_q3" id="v3_q3"></p>
+					<label for="v3_q1"><strong>The number of variants with high clinical importance:</strong></label></p><p>
+					<input type="text" name="v3_q1" id="v3_q1"></p><p>
+					
+					<label for="v3_q2"><strong>The number of variants that are well-established pathogenic:</strong></label></p><p>
+					<input type="text" name="v3_q2" id="v3_q2"></p>
+
+					<label for="v3_q3"><strong>Based on the information above, is the number of variants in Jamie's report with low clinical importance greater than, equal to, or less than the number of variants with high clinical importance?</strong></label><p>
+					<label class="radio" for="v3_q3_A">
+						<input type="radio" name="v3_q3" id="v3_q3_A" value="greater">Greater than
+					</label></p><p>
+					<label class="radio" for="v3_q3_B">
+						<input type="radio" name="v3_q3" id="v3_q3_B" value="equal">Equal
+					</label></p><p>
+					<label class="radio" for="v3_q3_C">
+						<input type="radio" name="v3_q3" id="v3_q3_C" value="less">Less than
+					</label></p><p>
+					<label class="radio" for="v3_q3_D">
+						<input type="radio" name="v3_q3" id="v3_q3_D" value="dunno">I don't know
+					</label></p><p>
 
 			
 					<label for="v3_q4"><strong>Based on the information above, is the number of uncertain pathogenic variants in Jamie's report greater than, equal to, or less than the number of well established pathogenic variants?</strong></label><p>
@@ -742,7 +744,7 @@
 								<td><input type="radio" name="v3_q10_e" value="7"></td>
 							</tr>
 							<tr>
-								<td>If I were Jamie, I would show the results in the report to my doctor in my next appointment.</td>
+								<td>If I were Jamie, I would show the results in the report to my doctor.</td>
 								<td><input type="radio" name="v3_q10_f" value="1"></td>
 								<td><input type="radio" name="v3_q10_f" value="2"></td>
 								<td><input type="radio" name="v3_q10_f" value="3"></td>
@@ -754,7 +756,7 @@
 						
 	
 							<tr>
-								<td>The report gives me a first grasp of Jamie's health and biology.</td>
+								<td>The report gives me a firm grasp of Jamie's health and biology.</td>
 								<td><input type="radio" name="v3_q10_g" value="1"></td>
 								<td><input type="radio" name="v3_q10_g" value="2"></td>
 								<td><input type="radio" name="v3_q10_g" value="3"></td>
@@ -763,46 +765,19 @@
 								<td><input type="radio" name="v3_q10_g" value="6"></td>
 								<td><input type="radio" name="v3_q10_g" value="7"></td>
 							</tr>
-							<tr>
-								<td>If I were Jamie, I would change my diet to a healthier one.</td>
-								<td><input type="radio" name="v3_q10_h" value="1"></td>
-								<td><input type="radio" name="v3_q10_h" value="2"></td>
-								<td><input type="radio" name="v3_q10_h" value="3"></td>
-								<td><input type="radio" name="v3_q10_h" value="4"></td>
-								<td><input type="radio" name="v3_q10_h" value="5"></td>
-								<td><input type="radio" name="v3_q10_h" value="6"></td>
-								<td><input type="radio" name="v3_q10_h" value="7"></td>
-							</tr>
-							<tr>
-								<td>If I were Jamie, I would do more physical activity.</td>
-								<td><input type="radio" name="v3_q10_i" value="1"></td>
-								<td><input type="radio" name="v3_q10_i" value="2"></td>
-								<td><input type="radio" name="v3_q10_i" value="3"></td>
-								<td><input type="radio" name="v3_q10_i" value="4"></td>
-								<td><input type="radio" name="v3_q10_i" value="5"></td>
-								<td><input type="radio" name="v3_q10_i" value="6"></td>
-								<td><input type="radio" name="v3_q10_i" value="7"></td>
-							</tr>
-							<tr>
-								<td>If I were Jamie, I would be less concered about my diet and exercise habits.</td>
-								<td><input type="radio" name="v3_q10_j" value="1"></td>
-								<td><input type="radio" name="v3_q10_j" value="2"></td>
-								<td><input type="radio" name="v3_q10_j" value="3"></td>
-								<td><input type="radio" name="v3_q10_j" value="4"></td>
-								<td><input type="radio" name="v3_q10_j" value="5"></td>
-								<td><input type="radio" name="v3_q10_j" value="6"></td>
-								<td><input type="radio" name="v3_q10_j" value="7"></td>
-							</tr>
+							
 						</tbody>
 					</table>
 					
-					<label for="v3_q11">Please use the space below to tell us how we can improve the report to make it easier to understand.</label></p><p>
+					<label for="v3_q11">Please use the space below to tell us which features were most helpful for understanding the report.</label></p><p>
 					<textarea name="v3_q11" id="v3_q11" cols="30" rows="5"></textarea>
 					</p><p>
-					
-					<label for="v3_q12">Please use the space below to tell us which features were most helpful for understanding the report.</label></p><p>
+
+					<label for="v3_q12">Please use the space below to tell us how we can improve the report to make it easier to understand.</label></p><p>
 					<textarea name="v3_q12" id="v3_q12" cols="30" rows="5"></textarea>
 					</p><p>
+					
+					
 				<input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" id="Submit_v3">
 			</form>
 		</div>
