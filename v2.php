@@ -81,47 +81,66 @@
 			</div>
 
 			<h2>Questions About the Report</h2>
-			<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
+				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
 				<form action="vis_process.php" method="post" id="v2_q">
 					
-					<label for="v2_q1"><strong>The number of variants with low clinical importance:</strong></label><p>
-					<input type="text" name="v2_q1" id="v2_q1"></p><p>
+					<label for="v2_q1"><strong>Based on the information above, is the number of variants in Jamie's report with low clinical importance greater than, equal to, or less than the number of variants with high clinical importance?</strong></label><p>
+					<label class="radio" for="v2_q1_A">
+						<input type="radio" name="v2_q1" id="v2_q1_A" value="greater">Greater than
+					</label></p><p>
+					<label class="radio" for="v2_q1_B">
+						<input type="radio" name="v2_q1" id="v2_q1_B" value="equal">Equal
+					</label></p><p>
+					<label class="radio" for="v2_q1_C">
+						<input type="radio" name="v2_q1" id="v2_q1_C" value="less">Less than
+					</label></p><p>
+					<label class="radio" for="v2_q1_D">
+						<input type="radio" name="v2_q1" id="v2_q1_D" value="dunno">I don't know
+					</label></p><p>
 					
 					<label for="v2_q2"><strong>The number of variants with high clinical importance:</strong></label></p><p>
 					<input type="text" name="v2_q2" id="v2_q2"></p><p>
 					
-					<label for="v2_q3"><strong>The number of variants tat are well-established pathogenic:</strong></label></p><p>
+					<label for="v2_q3"><strong>The number of variants that are well-established pathogenic:</strong></label></p><p>
 					<input type="text" name="v2_q3" id="v2_q3"></p>
 
-					<label for="v2_q4"><strong>The number of variants tat are uncertain pathogenic:</strong></label></p><p>
-					<input type="text" name="v2_q4" id="v2_q4"></p>
+			
+					<label for="v2_q4"><strong>Based on the information above, is the number of uncertain pathogenic variants in Jamie's report greater than, equal to, or less than the number of well established pathogenic variants?</strong></label><p>
+					<label class="radio" for="v2_q4_A">
+						<input type="radio" name="v2_q4" id="v2_q4_A" value="greater">Greater than
+					</label></p><p>
+					<label class="radio" for="v2_q4_B">
+						<input type="radio" name="v2_q4" id="v2_q4_B" value="equal">Equal
+					</label></p><p>
+					<label class="radio" for="v2_q4_C">
+						<input type="radio" name="v2_q4" id="v2_q4_C" value="less">Less than
+					</label></p><p>
+					<label class="radio" for="v2_q4_D">
+						<input type="radio" name="v2_q4" id="v2_q4_D" value="dunno">I don't know
+					</label></p><p>
 
-					<p><strong>True or false: The number of potentially pathogenic variants in Jamie's report is higher than the number of potentially benign or protective variants</strong></p><p>
+					<p><strong>Based on the information above, is the number of potentially pathogenic variants in Jamie's report greater than, equal to, or less than the number of potentially benign or protective variants?</strong></p><p>
 					
-					<label class="radio" for="v2_q5_T">
-						<input type="radio" name="v2_q5" id="v2_q5_T" value="True">True
+					<label class="radio" for="v2_q5_A">
+						<input type="radio" name="v2_q5" id="v2_q5_A" value="greater">Greater than
 					</label></p><p>
-					<label class="radio" for="v2_q5_F">
-						<input type="radio" name="v2_q5" id="v2_q5_F" value="False">False
+					<label class="radio" for="v2_q5_B">
+						<input type="radio" name="v2_q5" id="v2_q5_B" value="equal">Equal
+					</label></p><p>
+					<label class="radio" for="v2_q5_C">
+						<input type="radio" name="v2_q5" id="v2_q5_C" value="less">Less than
+					</label></p><p>
+					<label class="radio" for="v2_q5_D">
+						<input type="radio" name="v2_q5" id="v2_q5_D" value="dunno">I don't know
 					</label></p><p>
 
 
-					<p><strong>Which of the following variants would Jaime be most likely to discuss with a healthcare provider?</strong></p><p>
+					<p><strong>Which variants would Jaime be most likely to discuss with a healthcare provider?</strong></p><p>
+					<textarea name="v2_q6" id="v2_q6" cols="30" rows="5"></textarea>
+					</p><p>
 					
-					<label class="radio" for="v2_q6_A">
-						<input type="radio" name="v2_q6" id="v2_q6_A" value="rs1544410">rs1544410
-					</label></p><p>
-					<label class="radio" for="v2_q6_B">
-						<input type="radio" name="v2_q6" id="v2_q6_B" value="SERPINA1-E366K">SERPINA1-E366K
-					</label></p><p>
-					<label class="radio" for="v2_q6_C">
-						<input type="radio" name="v2_q6" id="v2_q6_C" value="MTRR-I49M">MTRR-I49M
-					</label></p><p>
-					<label class="radio" for="v2_q6_D">
-						<input type="radio" name="v2_q6" id="v2_q6_D" value="CACNA1S-L458H">CACNA1S-L458H
-					</label></p><p>
 
-					<p><strong>Is Jamie's risk of developing stomach flu greater than, equal to, or less than the average person?</strong></p><p>
+					<p><strong>Based on the information above, is Jamie's risk of developing stomach flu greater than, equal to, or less than the average person?</strong></p><p>
 					<label class="radio" for="v2_q7_A">
 						<input type="radio" name="v2_q7" id="v2_q7_A" value="greater">Greater than
 					</label></p><p>
@@ -210,7 +229,7 @@
 								<td><input type="radio" name="v2_q10_b" value="7"></td>
 							</tr>
 							<tr>
-								<td>The report results are uncertain.</td>
+								<td>The report is predictive of Jamie's future medical conditions with high certainty.</td>
 								<td><input type="radio" name="v2_q10_c" value="1"></td>
 								<td><input type="radio" name="v2_q10_c" value="2"></td>
 								<td><input type="radio" name="v2_q10_c" value="3"></td>
@@ -249,8 +268,10 @@
 								<td><input type="radio" name="v2_q10_f" value="6"></td>
 								<td><input type="radio" name="v2_q10_f" value="7"></td>
 							</tr>
+						
+	
 							<tr>
-								<td>If I were Jamie, I would schedule a special appointment with my doctor and discuss the results in the report with them.</td>
+								<td>The report gives me a first grasp of Jamie's health and biology.</td>
 								<td><input type="radio" name="v2_q10_g" value="1"></td>
 								<td><input type="radio" name="v2_q10_g" value="2"></td>
 								<td><input type="radio" name="v2_q10_g" value="3"></td>
@@ -260,7 +281,7 @@
 								<td><input type="radio" name="v2_q10_g" value="7"></td>
 							</tr>
 							<tr>
-								<td>If I were Jamie, I would read more about the health issues concerning th results in this report.</td>
+								<td>If I were Jamie, I would change my diet to a healthier one.</td>
 								<td><input type="radio" name="v2_q10_h" value="1"></td>
 								<td><input type="radio" name="v2_q10_h" value="2"></td>
 								<td><input type="radio" name="v2_q10_h" value="3"></td>
@@ -270,7 +291,7 @@
 								<td><input type="radio" name="v2_q10_h" value="7"></td>
 							</tr>
 							<tr>
-								<td>The report helps understand Jamie's health and biology.</td>
+								<td>If I were Jamie, I would do more physical activity.</td>
 								<td><input type="radio" name="v2_q10_i" value="1"></td>
 								<td><input type="radio" name="v2_q10_i" value="2"></td>
 								<td><input type="radio" name="v2_q10_i" value="3"></td>
@@ -278,26 +299,6 @@
 								<td><input type="radio" name="v2_q10_i" value="5"></td>
 								<td><input type="radio" name="v2_q10_i" value="6"></td>
 								<td><input type="radio" name="v2_q10_i" value="7"></td>
-							</tr>
-							<tr>
-								<td>If I were Jamie, I would change my diet to a healthier one.</td>
-								<td><input type="radio" name="v2_q10_j" value="1"></td>
-								<td><input type="radio" name="v2_q10_j" value="2"></td>
-								<td><input type="radio" name="v2_q10_j" value="3"></td>
-								<td><input type="radio" name="v2_q10_j" value="4"></td>
-								<td><input type="radio" name="v2_q10_j" value="5"></td>
-								<td><input type="radio" name="v2_q10_j" value="6"></td>
-								<td><input type="radio" name="v2_q10_j" value="7"></td>
-							</tr>
-							<tr>
-								<td>If I were Jamie, I would do more physical activity.</td>
-								<td><input type="radio" name="v2_q10_j" value="1"></td>
-								<td><input type="radio" name="v2_q10_j" value="2"></td>
-								<td><input type="radio" name="v2_q10_j" value="3"></td>
-								<td><input type="radio" name="v2_q10_j" value="4"></td>
-								<td><input type="radio" name="v2_q10_j" value="5"></td>
-								<td><input type="radio" name="v2_q10_j" value="6"></td>
-								<td><input type="radio" name="v2_q10_j" value="7"></td>
 							</tr>
 							<tr>
 								<td>If I were Jamie, I would be less concered about my diet and exercise habits.</td>
@@ -314,6 +315,10 @@
 					
 					<label for="v2_q11">Please use the space below to tell us how we can improve the report to make it easier to understand.</label></p><p>
 					<textarea name="v2_q11" id="v2_q11" cols="30" rows="5"></textarea>
+					</p><p>
+					
+					<label for="v2_q12">Please use the space below to tell us which features were most helpful for understanding the report.</label></p><p>
+					<textarea name="v2_q12" id="v2_q12" cols="30" rows="5"></textarea>
 					</p><p>
 				<input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" id="Submit_v2">
 			</form>
