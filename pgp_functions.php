@@ -9,7 +9,7 @@ SUMMER 2014
 // connects to database on tempest server
 function localConn() {
 	require_once('MDB2.php');
-	require_once('/home/cs304/public_html/php/MDB2-functions.php')
+	require_once('/home/cs304/public_html/php/MDB2-functions.php');
 	require_once('pgp_dsn.inc');
 
 	global $dbh;
@@ -25,7 +25,7 @@ function fetch_row($prepared){ //prepared is a result set
 function getUserResponse($postArray) {
 	$userResponse = array();
 	foreach ($_POST as $key => $entry) {
-		array_push()
+	  array_push();
 	}
 }
 

@@ -36,7 +36,7 @@ $user = $_SESSION["user"];
 $ip = $_SERVER['REMOTE_ADDR'];
 
 // Filter out used ip's
-$ipUsed = filter_var($ip, FILTER_VALIDATE_IP) ? check_ip($ip) : true; //more concise 'if' clause
+$ipUsed = filter_var($ip, FILTER_VALIDATE_IP) ? ip_exists($ip) : true; //more concise 'if' clause
 
 // Update data
 if (!empty($_POST)) {
