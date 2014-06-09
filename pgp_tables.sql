@@ -16,7 +16,8 @@ create table NEW_USER(
 	bubble_id int,
 	barchart_id int,
 	sharing_id int,
-	demo_id int
+	demo_id int,
+	ip varchar(50)
 	)
 	ENGINE = InnoDB;
 
