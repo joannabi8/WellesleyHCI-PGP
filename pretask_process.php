@@ -12,10 +12,10 @@ $dbh;
 localConn();
 
 // HELPER FUNCTION: Insert new user response from pretask page
-function add_pretask_row($userResponseValues) {
+function add_pretask_row($userResponse) {
 	global $dbh;
 	$query = "INSERT INTO NEW_PRETASK VALUES (DEFAULT,?,?,?,?,?,?)";
-	return $result = prepared_query($dbh, $query, $userResponseValues);
+	return $result = prepared_query($dbh, $query, $userResponse);
 }
 
 // PROCESS DATA
@@ -23,15 +23,15 @@ if (!empty($_POST)) {
 	$pretaskResponse = getUserResponse($_POST);
 	$id = $_SESSION["user"];
 	$ip = $_SERVER["REMOTE_ADDR"]; //documented PHP var
-	echo "HERE";
+
 	// Filter out used ip's
 	$ipUsed = filter_var($ip, FILTER_VALIDATE_IP) ? ip_exists($ip) : true; //more concise 'if' clause
 
 	if (!$ipUsed) {
 		add_pretask_row($pretaskResponse);
 		$pretask_id = mysql_insert_id(); //documented php function
-		$add_user = "INSERT INTO NEW_USER VALUES (?,?,?,?,?,?,?,?)";
-		prepared_query($dbh, $add_user, array($id, $pretask_id, NULL, NULL, NULL, NULL, NULL, NULL));
+		$add_user = "INSERT INTO NEW_USER VALUES (?,?,?,?,?,?,?,?,?,?)";
+		prepared_query($dbh, $add_user, array($id,$pretask_id,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL));
 	}
 	
 	// Redirect user to a random visualization

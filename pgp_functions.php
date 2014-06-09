@@ -21,12 +21,21 @@ function fetch_row($prepared){ //prepared is a result set
 	return $result = $prepared -> fetchRow(MDB2_FETCHMODE_ASSOC);
 }
 
+// security check for field values retrieved
+function secure_val($val) {
+    $newVal = stripslashes($val);
+    $newVal = htmlspecialchars($newVal);
+	return $newVal;
+}
+
 // get all field values from a form
 function getUserResponse($postArray) {
 	$userResponse = array();
 	foreach ($_POST as $key => $entry) {
-	  array_push();
+		array_push($userResponse, secure_val($entry));
 	}
+	array_pop($userResponse); //removes submit from array
+	return $userResponse;
 }
 
 // create new (unique) user id
