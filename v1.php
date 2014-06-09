@@ -31,6 +31,10 @@
 		<link href="styles/bootswatch.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 
+		<!-- Adding these to see if they fix the table -->
+		<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css">
+		<script type="text/javascript" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>
+
 		<script>
 			$(function(){
 				//DataTable
@@ -92,7 +96,7 @@
 			<h2>Your Results</h2>
 			<div class="report_table_wrapper">
 				<!-- GENOME REPORT TABLE -->
-				<table id="gnm_table">
+				<table id= "gnm_table">
 					<thead>
 						<tr>
 							<th class="sorting">Variant</th>
