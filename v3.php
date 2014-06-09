@@ -565,7 +565,7 @@
 			<div id="visualization" style="margin-left:-80px;"></div>
 			<h2>Questions About the Report</h2>
 				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
-				<form action="vis_task.php" method="post" id="v3_q">
+				<form action="vis_process.php" method="post" id="v3_q">
 					
 					<label for="v3_q1"><strong>The number of variants with low clinical importance:</strong></label><p>
 					<input type="text" name="v3_q1" id="v3_q1"></p><p>
