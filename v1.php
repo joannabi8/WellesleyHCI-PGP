@@ -72,7 +72,7 @@
 		<div class="navbar navbar-fixed-top navbar-inverse">
 			<div class="navbar-inner">
 				<div class="container">
-					<span class="brand"><img src="resource/assets/img/dna.png"> Your Personal Genomics Report</span>
+					<span class="brand"><img src="assets/img/dna.png"> Your Personal Genomics Report</span>
 				</div>
 			</div>
 		</div>

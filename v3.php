@@ -544,7 +544,7 @@
 		<div class="navbar navbar-fixed-top navbar-inverse">
 			<div class="navbar-inner">
 				<div class="container">
-					<span class="brand"><img src="resource/assets/img/dna.png"> Your Personal Genomics Report</span>
+					<span class="brand"><img src="assets/img/dna.png"> Your Personal Genomics Report</span>
 				</div>
 			</div>
 		</div>
@@ -562,7 +562,7 @@
 					Also, when hovering upon a column name, additional information about this information category is presented.<p>
 			
 			<h2>Your Results</h2>
-			<div id="visualization" style="width: 50px; height: 75px;"></div>
+			<div id="visualization" style="margin-left:-80px;"></div>
 			<h2>Questions About the Report</h2>
 				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
 				<form action="vis_task.php" method="post" id="v3_q">
