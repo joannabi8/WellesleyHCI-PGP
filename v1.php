@@ -119,18 +119,18 @@
 					<label for="v1_q2"><strong>The number of variants that are well-established pathogenic:</strong></label>
 					<input type="text" name="v1_q2" id="v1_q2">
 
-					<label for="v1_q3"><strong>Based on the information above, is the number of variants in Jamie's report with low clinical importance greater than, equal to, or less than the number of variants with high clinical importance?</strong></label>
+					<label for="v1_q3"><strong>Based on the information above, the number of variants in Jamie's report with low clinical importance is <span id="q3text">________</span> than the number of variants with high clinical importance?</strong></label>
 					<label class="radio" for="v1_q3_A">
-						<input type="radio" name="v1_q3" id="v1_q3_A" value="greater">Greater than
+						<input type="radio" name="v1_q3" id="v1_q3_A" value="greater" onchange="changetext();">Greater than
 					</label>
 					<label class="radio" for="v1_q3_B">
-						<input type="radio" name="v1_q3" id="v1_q3_B" value="equal">Equal
+						<input type="radio" name="v1_q3" id="v1_q3_B" value="equal" onchange="changetext();">Equal
 					</label>
 					<label class="radio" for="v1_q3_C">
-						<input type="radio" name="v1_q3" id="v1_q3_C" value="less">Less than
+						<input type="radio" name="v1_q3" id="v1_q3_C" value="less" onchange="changetext();">Less than
 					</label>
 					<label class="radio" for="v1_q3_D">
-						<input type="radio" name="v1_q3" id="v1_q3_D" value="dunno">I don't know
+						<input type="radio" name="v1_q3" id="v1_q3_D" value="dunno" onchange="changetext();">I don't know
 					</label>
 
 			
@@ -326,5 +326,11 @@
 			</form>
 		</div>
 		<div class="alert alert-block" id='validate_msg'></div>
+
+		<script>
+		function changetext() {
+			console.log this.name; 
+		}
+		</script> 
 	</body>
 </html>
