@@ -69,10 +69,9 @@
 					below carefully and then study Jamie's report. You will be asked questions about this report. 
 					The report was created by comparing Jamie's genome and a database of gene variants that are known
 					to be associated with medical conditions. Only gene variants that are found to be medically relevant
-					are reported.The report displays a table of gene variants. For each gene variant the treemap presents
-					its name, clinical importance, impact, allele frequency, and a summary about the medical conditions
-					it is associated with. You can sort the table by clicking on the arrows in each of the table columns.
-					Also, when hovering upon a column name, additional information about this information category is presented.</p>
+					are reported.The report displays a TreeMap of gene variants. For each gene variant the TreeMap presents
+					its name, and upon hovering its clinical importance, impact, allele frequency, and a summary about the medical conditions
+					it is associated with.</p>
 
 			<h2>Jaime's Results</h2>
 			<div id="visualization">
