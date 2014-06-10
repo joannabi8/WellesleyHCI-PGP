@@ -560,7 +560,7 @@
 					its name, clinical importance, impact, allele frequency, and a summary about the medical conditions
 					it is associated with. Also, when hovering upon a column name, additional information about this information category is presented.</p>
 			
-			<h2>Jaime's Results</h2>
+			<h2>Jamie's Results</h2>
 			<div id="visualization" style="margin-left:-80px;"></div>
 			<h2>Questions About the Report</h2>
 				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
@@ -617,7 +617,7 @@
 					</label>
 
 
-					<p><strong>Which variants would Jaime be most likely to discuss with a healthcare provider?</strong>
+					<p><strong>Which variants would Jamie be most likely to discuss with a healthcare provider?</strong>
 					<textarea name="v3_q6" id="v3_q6" cols="30" rows="5"></textarea>
 					
 					

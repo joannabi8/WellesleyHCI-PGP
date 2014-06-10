@@ -93,7 +93,7 @@
 					it is associated with. You can sort the table by clicking on the arrows in each of the table columns.
 					Also, when hovering upon a column name, additional information about this information category is presented.</p>
 			
-			<h2>Jaime's Results</h2>
+			<h2>Jamie's Results</h2>
 			<div class="report_table_wrapper">
 				<!-- GENOME REPORT TABLE -->
 				<table id="gnm_table">
@@ -164,7 +164,7 @@
 					</label>
 
 
-					<p><strong>Which variants would Jaime be most likely to discuss with a healthcare provider?</strong>
+					<p><strong>Which variants would Jamie be most likely to discuss with a healthcare provider?</strong>
 					<textarea name="v1_q6" id="v1_q6" cols="30" rows="5"></textarea>
 					
 					

@@ -65,7 +65,7 @@
 					</p>
 
 				
-		<h2>Jaime's Results</h2>							
+		<h2>Jamie's Results</h2>							
        <embed width="900" height="800" src="http://savedbythegoog.appspot.com/?id=314b80be054ceefb90730c8733abc5e71ff612d1" scale="tofit" frameborder="5"></embed>
 				
 					
@@ -126,7 +126,7 @@
 					</label>
 
 
-					<p><strong>Which variants would Jaime be most likely to discuss with a healthcare provider?</strong>
+					<p><strong>Which variants would Jamie be most likely to discuss with a healthcare provider?</strong>
 					<textarea name="v4_q6" id="v4_q6" cols="30" rows="5"></textarea>
 					
 					

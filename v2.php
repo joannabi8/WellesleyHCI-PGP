@@ -73,7 +73,7 @@
 					its name, and upon hovering its clinical importance, impact, allele frequency, and a summary about the medical conditions
 					it is associated with.</p>
 
-			<h2>Jaime's Results</h2>
+			<h2>Jamie's Results</h2>
 			<div id="visualization">
 				<div id="vis_low"></div>
 				<div id="vis_mod"></div>
@@ -134,7 +134,7 @@
 					</label>
 
 
-					<p><strong>Which variants would Jaime be most likely to discuss with a healthcare provider?</strong>
+					<p><strong>Which variants would Jamie be most likely to discuss with a healthcare provider?</strong>
 					<textarea name="v2_q6" id="v2_q6" cols="30" rows="5"></textarea>
 					
 					
