@@ -559,125 +559,123 @@
 					are reported.The report displays a table of gene variants. For each gene variant the chart presents
 					its name, clinical importance, impact, allele frequency, and a summary about the medical conditions
 					it is associated with. You can sort the table by clicking on the arrows in each of the table columns.
-					Also, when hovering upon a column name, additional information about this information category is presented.<p>
+					Also, when hovering upon a column name, additional information about this information category is presented.</p>
 			
 			<h2>Your Results</h2>
 			<div id="visualization" style="margin-left:-80px;"></div>
 			<h2>Questions About the Report</h2>
 				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
 				<form action="vis_process.php" method="post" id="v3_q">
+	
+					<label for="v3_q1"><strong>The number of variants with high clinical importance:</strong></label>
+					<input type="text" name="v3_q1" id="v3_q1">
 					
-					
-					
-					<label for="v3_q1"><strong>The number of variants with high clinical importance:</strong></label></p><p>
-					<input type="text" name="v3_q1" id="v3_q1"></p><p>
-					
-					<label for="v3_q2"><strong>The number of variants that are well-established pathogenic:</strong></label></p><p>
-					<input type="text" name="v3_q2" id="v3_q2"></p>
+					<label for="v3_q2"><strong>The number of variants that are well-established pathogenic:</strong></label>
+					<input type="text" name="v3_q2" id="v3_q2">
 
-					<label for="v3_q3"><strong>Based on the information above, is the number of variants in Jamie's report with low clinical importance greater than, equal to, or less than the number of variants with high clinical importance?</strong></label><p>
+					<label for="v3_q3"><strong>Based on the information above, is the number of variants in Jamie's report with low clinical importance greater than, equal to, or less than the number of variants with high clinical importance?</strong></label>
 					<label class="radio" for="v3_q3_A">
 						<input type="radio" name="v3_q3" id="v3_q3_A" value="greater">Greater than
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q3_B">
 						<input type="radio" name="v3_q3" id="v3_q3_B" value="equal">Equal
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q3_C">
 						<input type="radio" name="v3_q3" id="v3_q3_C" value="less">Less than
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q3_D">
 						<input type="radio" name="v3_q3" id="v3_q3_D" value="dunno">I don't know
-					</label></p><p>
+					</label>
 
 			
-					<label for="v3_q4"><strong>Based on the information above, is the number of uncertain pathogenic variants in Jamie's report greater than, equal to, or less than the number of well established pathogenic variants?</strong></label><p>
+					<label for="v3_q4"><strong>Based on the information above, is the number of uncertain pathogenic variants in Jamie's report greater than, equal to, or less than the number of well established pathogenic variants?</strong></label>
 					<label class="radio" for="v3_q4_A">
 						<input type="radio" name="v3_q4" id="v3_q4_A" value="greater">Greater than
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q4_B">
 						<input type="radio" name="v3_q4" id="v3_q4_B" value="equal">Equal
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q4_C">
 						<input type="radio" name="v3_q4" id="v3_q4_C" value="less">Less than
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q4_D">
 						<input type="radio" name="v3_q4" id="v3_q4_D" value="dunno">I don't know
-					</label></p><p>
+					</label>
 
-					<p><strong>Based on the information above, is the number of potentially pathogenic variants in Jamie's report greater than, equal to, or less than the number of potentially benign or protective variants?</strong></p><p>
+					<p><strong>Based on the information above, is the number of potentially pathogenic variants in Jamie's report greater than, equal to, or less than the number of potentially benign or protective variants?</strong></p>
 					
 					<label class="radio" for="v3_q5_A">
 						<input type="radio" name="v3_q5" id="v3_q5_A" value="greater">Greater than
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q5_B">
 						<input type="radio" name="v3_q5" id="v3_q5_B" value="equal">Equal
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q5_C">
 						<input type="radio" name="v3_q5" id="v3_q5_C" value="less">Less than
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q5_D">
 						<input type="radio" name="v3_q5" id="v3_q5_D" value="dunno">I don't know
-					</label></p><p>
+					</label>
 
 
-					<p><strong>Which variants would Jaime be most likely to discuss with a healthcare provider?</strong></p><p>
+					<p><strong>Which variants would Jaime be most likely to discuss with a healthcare provider?</strong>
 					<textarea name="v3_q6" id="v3_q6" cols="30" rows="5"></textarea>
-					</p><p>
+					
 					
 
-					<p><strong>Based on the information above, is Jamie's risk of developing stomach flu greater than, equal to, or less than the average person?</strong></p><p>
+					<p><strong>Based on the information above, is Jamie's risk of developing stomach flu greater than, equal to, or less than the average person?</strong>
 					<label class="radio" for="v3_q7_A">
 						<input type="radio" name="v3_q7" id="v3_q7_A" value="greater">Greater than
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q7_B">
 						<input type="radio" name="v3_q7" id="v3_q7_B" value="equal">Equal
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q7_C">
 						<input type="radio" name="v3_q7" id="v3_q7_C" value="less">Less than
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q7_D">
 						<input type="radio" name="v3_q7" id="v3_q7_D" value="dunno">I don't know
-					</label></p><p>
+					</label>
 
-					<p><strong>Based on the information above, is Jamie's risk of developing age-related macular degeneration greater than, equal to, or less than the average person?</strong></p><p>
+					<p><strong>Based on the information above, is Jamie's risk of developing age-related macular degeneration greater than, equal to, or less than the average person?</strong>
 					<label class="radio" for="v3_q8_A">
 						<input type="radio" name="v3_q8" id="v3_q8_A" value="greater">Greater than
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q8_B">
 						<input type="radio" name="v3_q8" id="v3_q8_B" value="equal">Equal
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q8_C">
 						<input type="radio" name="v3_q8" id="v3_q8_C" value="less">Less than
-					</label></p><p>
+					</label>
 					<label class="radio" for="v3_q8_D">
 						<input type="radio" name="v3_q8" id="v3_q8_D" value="dunno">I don't know
-					</label></p><p>
+					</label>
 
-					<p><strong>If you were Jamie, knowing this information, which of the following conditions would you be interested in learning more about? Select all that apply.</strong></p>
+					<p><strong>If you were Jamie, knowing this information, which of the following conditions would you be interested in learning more about? Select all that apply.</strong>
 					<label class="checkbox" for="v3_q9_A">
 						<input type="checkbox" name="v3_q9" id="v3_q9_A" value="alzheimers">Alzheimer's
-					</label></p><p>
+					</label>
 					<label class="checkbox" for="v3_q9_B">
 						<input type="checkbox" name="v3_q9" id="v3_q9_B" value="parkinsons">Parkinson's
-					</label></p><p>
+					</label>
 					<label class="checkbox" for="v3_q9_C">
 						<input type="checkbox" name="v3_q9" id="v3_q9_C" value="liver">Liver Disease
-					</label></p><p>
+					</label>
 					<label class="checkbox" for="v3_q9_D">
 						<input type="checkbox" name="v3_q9" id="v3_q9_D" value="colon">Colon Cancer
-					</label></p><p>
+					</label>
 					<label class="checkbox" for="v3_q9_E">
 						<input type="checkbox" name="v3_q9" id="v3_q9_E" value="diabetes">Diabetes
-					</label></p><p>
+					</label>
 					<label class="checkbox" for="v3_q9_F">
 						<input type="checkbox" name="v3_q9" id="v3_q9_F" value="emphysema">Emphysema
-					</label></p><p>
+					</label>
 					<label class="checkbox" for="v3_q9_G">
 						<input type="checkbox" name="v3_q9" id="v3_q9_G" value="tuberculosis">Tuberculosis
-					</label></p><p>
+					</label>
 					<label class="checkbox" for="v3_q9_H">
 						<input type="checkbox" name="v3_q9" id="v3_q9_H" value="eye">Eye Disease
-					</label></p><p>
+					</label>
 
 					<table class="table table-bordered table-striped table-hover">
 						<thead>
@@ -769,13 +767,13 @@
 						</tbody>
 					</table>
 					
-					<label for="v3_q11">Please use the space below to tell us which features were most helpful for understanding the report.</label></p><p>
+					<label for="v3_q11">Please use the space below to tell us which features were most helpful for understanding the report.</label>
 					<textarea name="v3_q11" id="v3_q11" cols="30" rows="5"></textarea>
-					</p><p>
+					
 
-					<label for="v3_q12">Please use the space below to tell us how we can improve the report to make it easier to understand.</label></p><p>
+					<label for="v3_q12">Please use the space below to tell us how we can improve the report to make it easier to understand.</label>
 					<textarea name="v3_q12" id="v3_q12" cols="30" rows="5"></textarea>
-					</p><p>
+					
 					
 					
 				<input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" id="Submit_v3">
