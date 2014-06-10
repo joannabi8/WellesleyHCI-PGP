@@ -31,6 +31,10 @@
 		<link href="styles/bootswatch.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 
+		<!-- Adding these to see if they fix the table -->
+ 		<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css">
+ 		<script type="text/javascript" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>
+
 		<script>
 			$(function(){
 				//DataTable
