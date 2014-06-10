@@ -556,10 +556,9 @@
 					below carefully and then study Jamie's report. You will be asked questions about this report. 
 					The report was created by comparing Jamie's genome and a database of gene variants that are known
 					to be associated with medical conditions. Only gene variants that are found to be medically relevant
-					are reported.The report displays a table of gene variants. For each gene variant the chart presents
+					are reported.The report displays a Bar Chart of gene variants. For each gene variant the chart presents
 					its name, clinical importance, impact, allele frequency, and a summary about the medical conditions
-					it is associated with. You can sort the table by clicking on the arrows in each of the table columns.
-					Also, when hovering upon a column name, additional information about this information category is presented.</p>
+					it is associated with. Also, when hovering upon a column name, additional information about this information category is presented.</p>
 			
 			<h2>Jaime's Results</h2>
 			<div id="visualization" style="margin-left:-80px;"></div>
