@@ -121,16 +121,16 @@
 
 					<label for="v1_q3"><strong>Based on the information above, the number of variants in Jamie's report with low clinical importance is <span id="q3text">________</span> than the number of variants with high clinical importance?</strong></label>
 					<label class="radio" for="v1_q3_A">
-						<input type="radio" name="v1_q3" id="v1_q3_A" value="greater" onchange="changetext();">Greater than
+						<input type="radio" name="v1_q3" id="v1_q3_A" value="greater" onselect="changetext();">Greater than
 					</label>
 					<label class="radio" for="v1_q3_B">
-						<input type="radio" name="v1_q3" id="v1_q3_B" value="equal" onchange="changetext();">Equal
+						<input type="radio" name="v1_q3" id="v1_q3_B" value="equal" onselect="changetext();">Equal
 					</label>
 					<label class="radio" for="v1_q3_C">
-						<input type="radio" name="v1_q3" id="v1_q3_C" value="less" onchange="changetext();">Less than
+						<input type="radio" name="v1_q3" id="v1_q3_C" value="less" onselect="changetext();">Less than
 					</label>
 					<label class="radio" for="v1_q3_D">
-						<input type="radio" name="v1_q3" id="v1_q3_D" value="dunno" onchange="changetext();">I don't know
+						<input type="radio" name="v1_q3" id="v1_q3_D" value="dunno" onselect="changetext();">I don't know
 					</label>
 
 			
@@ -330,6 +330,29 @@
 		<script>
 		function changetext() {
 			console.log this.name; 
+
+			var basestr = this.name + "_";
+			console.log basestr;
+
+			var astr = basestr + "A";
+			var bstr = basestr + "B";
+			var cstr = basestr + "C";
+			var dstr = basestr + "D";
+
+			console.log astr;
+			console.log bstr;
+			console.log cstr;
+			console.log dstr;
+
+			if (document.getElementById(astr).checked) {
+				console.log("A WAS CHECKED");
+			} else if (document.getElementById(bstr).checked) {
+				console.log("B WAS CHECKED");
+			} else if (document.getElementById(cstr).checked) {
+				console.log("C WAS CHECKED");
+			} else if (document.getElementById(dstr).checked) {
+				console.log("D WAS CHECKED");
+			}
 		}
 		</script> 
 	</body>
