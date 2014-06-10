@@ -119,48 +119,48 @@
 					<label for="v1_q2"><strong>The number of variants that are well-established pathogenic:</strong></label>
 					<input type="text" name="v1_q2" id="v1_q2">
 
-					<label for="v1_q3"><strong>Based on the information above, the number of variants in Jamie's report with low clinical importance is <span id="q3text">________</span> than the number of variants with high clinical importance?</strong></label>
+					<label for="v1_q3"><strong>Based on the information above, the number of variants in Jamie's report with low clinical importance is <span id="v1_q3text">________</span> the number of variants with high clinical importance.</strong></label>
 					<label class="radio" for="v1_q3_A">
-						<input type="radio" name="v1_q3" id="v1_q3_A" value="greater" onselect="changetext();">Greater than
+						<input type="radio" name="v1_q3" id="v1_q3_A" value="greater" onchange="changetext(this.name, this.value);">Greater than
 					</label>
 					<label class="radio" for="v1_q3_B">
-						<input type="radio" name="v1_q3" id="v1_q3_B" value="equal" onselect="changetext();">Equal
+						<input type="radio" name="v1_q3" id="v1_q3_B" value="equal" onchange="changetext(this.name, this.value);">Equal
 					</label>
 					<label class="radio" for="v1_q3_C">
-						<input type="radio" name="v1_q3" id="v1_q3_C" value="less" onselect="changetext();">Less than
+						<input type="radio" name="v1_q3" id="v1_q3_C" value="less" onchange="changetext(this.name, this.value);">Less than
 					</label>
 					<label class="radio" for="v1_q3_D">
-						<input type="radio" name="v1_q3" id="v1_q3_D" value="dunno" onselect="changetext();">I don't know
+						<input type="radio" name="v1_q3" id="v1_q3_D" value="dunno" onchange="changetext(this.name, this.value);">I don't know
 					</label>
 
 			
-					<label for="v1_q4"><strong>Based on the information above, is the number of uncertain pathogenic variants in Jamie's report greater than, equal to, or less than the number of well established pathogenic variants?</strong></label>
+					<label for="v1_q4"><strong>Based on the information above, the number of uncertain pathogenic variants in Jamie's report is <span id="v1_q4text">________</span> the number of well established pathogenic variants.</strong></label>
 					<label class="radio" for="v1_q4_A">
-						<input type="radio" name="v1_q4" id="v1_q4_A" value="greater">Greater than
+						<input type="radio" name="v1_q4" id="v1_q4_A" value="greater" onchange="changetext(this.name, this.value);">Greater than
 					</label>
 					<label class="radio" for="v1_q4_B">
-						<input type="radio" name="v1_q4" id="v1_q4_B" value="equal">Equal
+						<input type="radio" name="v1_q4" id="v1_q4_B" value="equal" onchange="changetext(this.name, this.value);">Equal
 					</label>
 					<label class="radio" for="v1_q4_C">
-						<input type="radio" name="v1_q4" id="v1_q4_C" value="less">Less than
+						<input type="radio" name="v1_q4" id="v1_q4_C" value="less" onchange="changetext(this.name, this.value);">Less than
 					</label>
 					<label class="radio" for="v1_q4_D">
-						<input type="radio" name="v1_q4" id="v1_q4_D" value="dunno">I don't know
+						<input type="radio" name="v1_q4" id="v1_q4_D" value="dunno" onchange="changetext(this.name, this.value);">I don't know
 					</label>
 
-					<p><strong>Based on the information above, is the number of potentially pathogenic variants in Jamie's report greater than, equal to, or less than the number of potentially benign or protective variants?</strong></p>
+					<p><strong>Based on the information above, the number of potentially pathogenic variants in Jamie's report is <span id="v1_q5text">________</span> the number of potentially benign or protective variants.</strong></p>
 					
 					<label class="radio" for="v1_q5_A">
-						<input type="radio" name="v1_q5" id="v1_q5_A" value="greater">Greater than
+						<input type="radio" name="v1_q5" id="v1_q5_A" value="greater" onchange="changetext(this.name, this.value);">Greater than
 					</label>
 					<label class="radio" for="v1_q5_B">
-						<input type="radio" name="v1_q5" id="v1_q5_B" value="equal">Equal
+						<input type="radio" name="v1_q5" id="v1_q5_B" value="equal" onchange="changetext(this.name, this.value);">Equal
 					</label>
 					<label class="radio" for="v1_q5_C">
-						<input type="radio" name="v1_q5" id="v1_q5_C" value="less">Less than
+						<input type="radio" name="v1_q5" id="v1_q5_C" value="less" onchange="changetext(this.name, this.value);">Less than
 					</label>
 					<label class="radio" for="v1_q5_D">
-						<input type="radio" name="v1_q5" id="v1_q5_D" value="dunno">I don't know
+						<input type="radio" name="v1_q5" id="v1_q5_D" value="dunno" onchange="changetext(this.name, this.value);">I don't know
 					</label>
 
 
@@ -169,32 +169,32 @@
 					
 					
 
-					<p><strong>Based on the information above, is Jamie's risk of developing stomach flu greater than, equal to, or less than the average person?</strong>
+					<p><strong>Based on the information above, Jamie's risk of developing stomach flu is <span id="v1_q7text">________</span> the average person.</strong>
 					<label class="radio" for="v1_q7_A">
-						<input type="radio" name="v1_q7" id="v1_q7_A" value="greater">Greater than
+						<input type="radio" name="v1_q7" id="v1_q7_A" value="greater" onchange="changetext(this.name, this.value);">Greater than
 					</label>
 					<label class="radio" for="v1_q7_B">
-						<input type="radio" name="v1_q7" id="v1_q7_B" value="equal">Equal
+						<input type="radio" name="v1_q7" id="v1_q7_B" value="equal" onchange="changetext(this.name, this.value);">Equal
 					</label>
 					<label class="radio" for="v1_q7_C">
-						<input type="radio" name="v1_q7" id="v1_q7_C" value="less">Less than
+						<input type="radio" name="v1_q7" id="v1_q7_C" value="less" onchange="changetext(this.name, this.value);">Less than
 					</label>
 					<label class="radio" for="v1_q7_D">
-						<input type="radio" name="v1_q7" id="v1_q7_D" value="dunno">I don't know
+						<input type="radio" name="v1_q7" id="v1_q7_D" value="dunno" onchange="changetext(this.name, this.value);">I don't know
 					</label>
 
-					<p><strong>Based on the information above, is Jamie's risk of developing age-related macular degeneration greater than, equal to, or less than the average person?</strong>
+					<p><strong>Based on the information above, Jamie's risk of developing age-related macular degeneration is <span id="v1_q8text">________</span> the average person?</strong>
 					<label class="radio" for="v1_q8_A">
-						<input type="radio" name="v1_q8" id="v1_q8_A" value="greater">Greater than
+						<input type="radio" name="v1_q8" id="v1_q8_A" value="greater" onchange="changetext(this.name, this.value);">Greater than
 					</label>
 					<label class="radio" for="v1_q8_B">
-						<input type="radio" name="v1_q8" id="v1_q8_B" value="equal">Equal
+						<input type="radio" name="v1_q8" id="v1_q8_B" value="equal" onchange="changetext(this.name, this.value);">Equal
 					</label>
 					<label class="radio" for="v1_q8_C">
-						<input type="radio" name="v1_q8" id="v1_q8_C" value="less">Less than
+						<input type="radio" name="v1_q8" id="v1_q8_C" value="less" onchange="changetext(this.name, this.value);">Less than
 					</label>
 					<label class="radio" for="v1_q8_D">
-						<input type="radio" name="v1_q8" id="v1_q8_D" value="dunno">I don't know
+						<input type="radio" name="v1_q8" id="v1_q8_D" value="dunno" onchange="changetext(this.name, this.value);">I don't know
 					</label>
 
 					<p><strong>If you were Jamie, knowing this information, which of the following conditions would you be interested in learning more about? Select all that apply.</strong>
@@ -327,33 +327,25 @@
 		</div>
 		<div class="alert alert-block" id='validate_msg'></div>
 
-		<script>
-		function changetext() {
-			console.log this.name; 
-
-			var basestr = this.name + "_";
-			console.log basestr;
-
-			var astr = basestr + "A";
-			var bstr = basestr + "B";
-			var cstr = basestr + "C";
-			var dstr = basestr + "D";
-
-			console.log astr;
-			console.log bstr;
-			console.log cstr;
-			console.log dstr;
-
-			if (document.getElementById(astr).checked) {
-				console.log("A WAS CHECKED");
-			} else if (document.getElementById(bstr).checked) {
-				console.log("B WAS CHECKED");
-			} else if (document.getElementById(cstr).checked) {
-				console.log("C WAS CHECKED");
-			} else if (document.getElementById(dstr).checked) {
-				console.log("D WAS CHECKED");
+	</body>
+	<script>
+		function changetext(name, value) {
+			var spanid = name + "text"; 
+			console.log(spanid);
+			var el = document.getElementById(spanid);
+			if (value === "greater") {
+				el.innerHTML = "<strong>GREATER THAN</strong>";
+				el.style.color = "red";
+			} else if (value === "equal") {
+				el.innerHTML = "<strong>EQUAL TO</strong>";
+				el.style.color = "red";
+			} else if (value === "less") {
+				el.innerHTML = "<strong>LESS THAN</strong>";
+				el.style.color = "red";
+			} else if (value === "dunno") {
+				el.innerHTML = "<strong>???</strong>";
+				el.style.color = "red";
 			}
 		}
 		</script> 
-	</body>
 </html>
