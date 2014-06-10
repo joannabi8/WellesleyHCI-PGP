@@ -561,7 +561,7 @@
 					it is associated with. You can sort the table by clicking on the arrows in each of the table columns.
 					Also, when hovering upon a column name, additional information about this information category is presented.</p>
 			
-			<h2>Your Results</h2>
+			<h2>Jaime's Results</h2>
 			<div id="visualization" style="margin-left:-80px;"></div>
 			<h2>Questions About the Report</h2>
 				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>

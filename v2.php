@@ -72,8 +72,9 @@
 					are reported.The report displays a table of gene variants. For each gene variant the treemap presents
 					its name, clinical importance, impact, allele frequency, and a summary about the medical conditions
 					it is associated with. You can sort the table by clicking on the arrows in each of the table columns.
-					Also, when hovering upon a column name, additional information about this information category is presented.<p>
+					Also, when hovering upon a column name, additional information about this information category is presented.</p>
 
+			<h2>Jaime's Results</h2>
 			<div id="visualization">
 				<div id="vis_low"></div>
 				<div id="vis_mod"></div>
