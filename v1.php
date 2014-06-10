@@ -100,10 +100,10 @@
 					<thead>
 						<tr>
 							<th class="sorting">Variant</th>
-							<th class="sorting">Clinical Importance</th>
+							<th class="sorting" style="width:110px;">Clinical Importance</th>
 							<th class="sorting">Impact</th>
 							<th class="sorting">Status</th>
-							<th class="sorting">Allele <br> Frequency</th>
+							<th class="sorting" style="width:90px;">Allele <br> Frequency</th>
 							<th>Summary</th>
 						</tr>
 					</thead>
