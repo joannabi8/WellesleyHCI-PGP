@@ -679,14 +679,14 @@
 					<table class="table table-bordered table-striped table-hover">
 						<thead>
 							<tr>
-								<th><strong>Statement</strong></th>
-								<th><strong>Strongly disagree</strong></th>
-								<th><strong>Disagree</strong></th>
-								<th><strong>Somewhat disagree</strong></th>
-								<th><strong>Neither agree or disagree</strong></th>
-								<th><strong>Somewhat agree</strong></th>
-								<th><strong>Agree</strong></th>
-								<th><strong>Strongly Agree</strong></th>
+								<th style="width:80px;"><strong>Statement</strong></th>
+								<th style="width:80px;"><strong>Strongly disagree</strong></th>
+								<th style="width:80px;"><strong>Disagree</strong></th>
+								<th style="width:80px;"><strong>Somewhat disagree</strong></th>
+								<th style="width:80px;"><strong>Neither agree or disagree</strong></th>
+								<th style="width:80px;"><strong>Somewhat agree</strong></th>
+								<th style="width:80px;"><strong>Agree</strong></th>
+								<th style="width:80px;"><strong>Strongly Agree</strong></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -721,7 +721,7 @@
 								<td><input type="radio" name="v3_q10_c" value="7"></td>
 							</tr>
 							<tr>
-								<td>I need the help of a healthcare professional to understand the results in the report.</td>
+								<td>If I were Jamie, I would need the help of a healthcare professional to understand the results in the report.</td>
 								<td><input type="radio" name="v3_q10_d" value="1"></td>
 								<td><input type="radio" name="v3_q10_d" value="2"></td>
 								<td><input type="radio" name="v3_q10_d" value="3"></td>
