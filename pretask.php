@@ -13,6 +13,25 @@ localConn(); //establish connection
 $uid = new_user(); // helper function from pgp_function.php
 $_SESSION["user"] = $uid;
 
+$_SESSION['pretask_start_time'] = time(); //start timer
+
+/* THIS IS SHIT RIGHT NOW FIX THIS LATER
+// Check if new user or if user clicked 'back'
+if (!isset($SESSION['user'])) {
+  $uid = new_user(); // helper function from pgp_function.php
+} else {
+  $uid = $_SESSION['user'];
+}
+$_SESSION["user"] = $uid;
+
+// Check if pretask row for user already exist
+$getUser = fetch_row(find_user($uid));
+$pretaskID = $getUser['pretask_id'];
+if ($pretaskID!= null) {
+  $query = "SELECT * FROM NEW_PRETASK WHERE pretask_id = $pretaskID";
+  $result = query($dbh, $query);
+  $ LOLOL IDK WHAT I'M DOING*/
+
 ?>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
@@ -125,7 +144,7 @@ $_SESSION["user"] = $uid;
 			<label><input type="radio" name="q6" value="no">No</label>
 	</ol>
 	
-	<p><input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" id="Submit_PreTask"></p> 
+	<p><input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Continue" id="Submit_PreTask"></p> 
 	</form>
 
 </body>
