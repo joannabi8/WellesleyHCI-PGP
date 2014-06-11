@@ -230,7 +230,7 @@
 								<td><input type="radio" name="v4_q10_c" value="7"></td>
 							</tr>
 							<tr>
-								<td>If I were Jamie, I would need the help of a healthcare professional to understand the results in the report.</td>
+								<td>I would need the help of a healthcare professional to better understand Jamie's results.</td>
 								<td><input type="radio" name="v4_q10_d" value="1"></td>
 								<td><input type="radio" name="v4_q10_d" value="2"></td>
 								<td><input type="radio" name="v4_q10_d" value="3"></td>
@@ -250,7 +250,7 @@
 								<td><input type="radio" name="v4_q10_e" value="7"></td>
 							</tr>
 							<tr>
-								<td>If I were Jamie, I would show the results in the report to my doctor.</td>
+								<td>If I were Jamie, I would discuss the results in the report with my doctor.</td>
 								<td><input type="radio" name="v4_q10_f" value="1"></td>
 								<td><input type="radio" name="v4_q10_f" value="2"></td>
 								<td><input type="radio" name="v4_q10_f" value="3"></td>
