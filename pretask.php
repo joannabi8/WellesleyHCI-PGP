@@ -60,7 +60,7 @@ if ($pretaskID!= null) {
 		}
 		</script>
 	<!--End javascript-->
-  	<title>PGHCI for GET Labs: Training</title>
+  	<title>PGHCI: Training</title>
 </head>
 
 <body>
@@ -68,7 +68,7 @@ if ($pretaskID!= null) {
 <div class="navbar navbar-fixed-top navbar-inverse">
     <div class="navbar-inner">
        	<div class="container">
-       		<span class="brand"><img src="assets/img/dna.png"> PGHCI for GET Labs</span>
+       		<span class="brand"><img src="assets/img/dna.png"> PGHCI</span>
         </div>
     </div>
 </div>
