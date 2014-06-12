@@ -1,3 +1,10 @@
+<?php
+	session_start();
+	error_reporting(E_ERROR);
+
+        $_SESSION['demograph_start_time'] = time(); //start timer
+?>
+
 <!DOCTYPE>
 	<!--Wellesley HCI PGP summer 2014
 	updated by Laura M. Ascher
@@ -8,61 +15,10 @@
 		<title>PGHCI: Questions</title>
 				
 		<link href="styles/bootswatch.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="vis_style.css">
-
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<!--jQuery & vis.js-->
-		<script type="text/javascript" charset="utf8" src="../pghci/vis/resource/js/jquery-1.10.2.js"></script>
-		<!--<script type="text/javascript" charset="utf8" src="vis_klu.js"></script>-->
-		<script>
-			$(function(){
-				//Populate form
-				$(function() {
-					var formData = {"preQ_id":"72","signature":"aaa","q0":null,"q1":null,"q2":null,"q3":null,"q4":null,"q5":null,"q6":null, "personID":null,"time_elapsed":null};
-					console.log(formData);
-					if (formData != null) {
-						$.each(formData, function(key,val) {
-							var $el = $('[name="'+key+'"]'),
-								type = $el.attr('type');
-							
-							//If updating personID field in questions.php
-							if (key == 'personID') {
-								if (val == 'default' || val == 'other') $el.filter('[value="'+val+'"]').prop('checked',true);
-								else {
-									$el.filter('[value="own"]').prop('checked',true);
-									$('[name="personID_text"]').val(val);
-								}
-							} else {
-								switch(type) {
-									case 'hidden':
-										//If column has non-empty value, user checked box
-										//get checkbox assoc. with hidden input and set to checked
-										//Note: checkboxes are written in hidden-checkbox pairs so $_POST will always 
-										//have a value for a checkbox field, even if checkbox is unchecked 
-										//(which would result in fields missing from $_POST)
-										if (val !== '' && val !== null) {
-											//Get checkbox (descendant of sibling <td>)
-											$el = $el.next().find('[type=checkbox]');
-											$el.prop('checked',true);
-										}
-										break;
-									case 'checkbox':
-										$el.prop('checked',true);
-										break;
-									case 'radio':
-										$el.filter('[value="'+val+'"]').prop('checked',true);
-										break;
-									case 'select':
-										$el.val('[value="'+val+'"]');
-									default:
-										$el.val(val);
-								}
-							}
-						});
-					}
-				});
-				
-			});
-		</script>
+		<script type="text/javascript" charset="utf8" src="scripts/jquery/jquery-1.10.2.js"></script>
+		
 	</head>
 	<body>
 	<div class="navbar navbar-fixed-top navbar-inverse">
@@ -74,10 +30,10 @@
 	</div>
 	
 	<div class="container" id="study_wrapper">
-	<form id="preQ_form" method="POST" action=/~hcilab/pghci_NEW/thankyou.html><ol>
-		<input type="submit" name="submit" value="Back to consent" class="submit_top">
-		<input type="submit" name="submit" value="Continue to report" class="submit_top">
-				<p>Your participant ID is 6a9384.
+	<form id="demo_form" method="POST" action=/~hcilab/pghci_NEW/dem_process><ol>
+		<!--<input type="submit" name="submit" value="Back to consent" class="submit_top">
+		<input type="submit" name="submit" value="Continue to report" class="submit_top">-->
+				
 		<h2>Demographic Questions</h2>
 		
 		<label for="age"> <strong>How old are you?</strong> </label>

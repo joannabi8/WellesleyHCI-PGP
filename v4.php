@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	$_SESSION['vis'] = "bubble";
+	error_reporting(E_ERROR);
+
+        $_SESSION['vis_start_time'] = time(); //start timer
+?>
+
 <!-- v4.php
 	 Bubble Chart Visualization and questions
 	 Wellesley HCI PGP
@@ -7,7 +15,7 @@
 	<!DOCTYPE html> 
 	<html>
 	<head>
-		<title>PGP Visualization: Bubble Chart</title>
+		<title>PGHCI Visualization: Bubble Chart</title>
 		<!--jQuery & vis.js-->
 		<script type="text/javascript" charset="utf8" src="scripts/jquery/jquery-1.10.2.js"></script>
 		<script type="text/javascript" charset="utf8" src="scripts/vis.js"></script>
@@ -46,7 +54,7 @@
 			<div class="navbar navbar-fixed-top navbar-inverse">
 				<div class="navbar-inner">
 					<div class="container">
-						<span class="brand"><img src="assets/img/dna.png"> Your Personal Genomics Report</span>
+						<span class="brand"><img src="assets/img/dna.png"> Jamie's Personal Genomics Report</span>
 					</div>
 				</div>
 			</div>
@@ -160,30 +168,22 @@
 					</label>
 
 					<p><strong>If you were Jamie, knowing this information, which of the following conditions would you be interested in learning more about? Select all that apply.</strong>
-					<label class="checkbox" for="v4_q9_A">
-						<input type="checkbox" name="v4_q9" id="v4_q9_A" value="alzheimers">Alzheimer's
-					</label>
-					<label class="checkbox" for="v4_q9_B">
-						<input type="checkbox" name="v4_q9" id="v4_q9_B" value="parkinsons">Parkinson's
-					</label>
-					<label class="checkbox" for="v4_q9_C">
-						<input type="checkbox" name="v4_q9" id="v4_q9_C" value="liver">Liver Disease
-					</label>
-					<label class="checkbox" for="v4_q9_D">
-						<input type="checkbox" name="v4_q9" id="v4_q9_D" value="colon">Colon Cancer
-					</label>
-					<label class="checkbox" for="v4_q9_E">
-						<input type="checkbox" name="v4_q9" id="v4_q9_E" value="diabetes">Diabetes
-					</label>
-					<label class="checkbox" for="v4_q9_F">
-						<input type="checkbox" name="v4_q9" id="v4_q9_F" value="emphysema">Emphysema
-					</label>
-					<label class="checkbox" for="v4_q9_G">
-						<input type="checkbox" name="v4_q9" id="v4_q9_G" value="tuberculosis">Tuberculosis
-					</label>
-					<label class="checkbox" for="v4_q9_H">
-						<input type="checkbox" name="v4_q9" id="v4_q9_H" value="eye">Eye Disease
-					</label>
+<input type="hidden" name="q9a">
+	  <label><input type="checkbox" name="q9a"  value="alzheimers">Alzheimer's</label>
+			<input type="hidden" name="q9b">
+			<label><input type="checkbox" name="q9b"  value="parkinsons">Parkinson's</label>
+	  <input type="hidden" name="q9c">
+	  <label><input type="checkbox" name="q9c"  value="liver">Liver Disease</label>
+	  <input type="hidden" name="q9d">
+	  <label><input type="checkbox" name="q9d"  value="colon">Colon Cancer</label>
+	  <input type="hidden" name="q9e">
+	  <label><input type="checkbox" name="q9e"  value="diabetes">Diabetes</label>
+	  <input type="hidden" name="q9f">
+	  <label><input type="checkbox" name="q9f"  value="emphysema">Emphysema</label>
+	  <input type="hidden" name="q9g">
+	  <label><input type="checkbox" name="q9g"  value="tuberculosis">Tubercolosis</label>
+	  <input type="hidden" name="q9h">
+	  <label><input type="checkbox" name="q9h"  value="eye">Eye Disease</label>
 
 					<table class="table table-bordered table-striped table-hover">
 						<thead>
@@ -230,7 +230,7 @@
 								<td><input type="radio" name="v4_q10_c" value="7"></td>
 							</tr>
 							<tr>
-								<td>I would need the help of a healthcare professional to better understand Jamie's results.</td>
+								<td>If I were Jamie, I would need the help of a healthcare professional to understand the results in the report.</td>
 								<td><input type="radio" name="v4_q10_d" value="1"></td>
 								<td><input type="radio" name="v4_q10_d" value="2"></td>
 								<td><input type="radio" name="v4_q10_d" value="3"></td>
@@ -250,7 +250,7 @@
 								<td><input type="radio" name="v4_q10_e" value="7"></td>
 							</tr>
 							<tr>
-								<td>If I were Jamie, I would discuss the results in the report with my doctor.</td>
+								<td>If I were Jamie, I would show the results in the report to my doctor.</td>
 								<td><input type="radio" name="v4_q10_f" value="1"></td>
 								<td><input type="radio" name="v4_q10_f" value="2"></td>
 								<td><input type="radio" name="v4_q10_f" value="3"></td>

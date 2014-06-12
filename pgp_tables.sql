@@ -38,12 +38,12 @@ create table NEW_VIS(
 	vis_type enum('table','treemap','bar','bubble') not null,
 	q1 int not null,
 	q2 int not null,
-	q3 enum('a','b','c','d') not null,
-	q4 enum('a','b','c','d') not null,
-	q5 enum('a','b','c','d') not null,
+	q3 varchar(20) not null,
+	q4 varchar(20) not null,
+	q5 varchar(20) not null,
 	q6 varchar(500) not null,
-	q7 enum('a','b','c','d') not null,
-	q8 enum('a','b','c','d') not null,
+	q7 varchar(20) not null,
+	q8 varchar(20) not null,
 	q9_a char(11) not null, -- not sure I completely understand here
 	q9_b char(11) not null,
 	q9_c char(13) not null,
@@ -67,14 +67,12 @@ create table NEW_VIS(
 
 -- create the demographics table
 create table NEW_DEMOGRAPHS(
-	dem_id int not null primary key,
-	q1 varchar(50),
-	q2 enum('yes','no'),
-	q3 int,
-	q4 enum('female','male','other'),
-	q5 char(20), -- how it's done in old db, not sure i understand...
-	q6 enum('yes','no'),
-	q7 enum('yes','no'),
+	dem_id int auto_increment not null primary key,
+	q1 int,
+	q2 enum('female','male','other'),
+	q3 char(20),
+	q4 enum('yes','no'),
+	q5 enum('yes','no'),
 	time_spent int
 	)
 	ENGINE = InnoDB;
