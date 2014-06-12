@@ -8,7 +8,7 @@ drop table if exists NEW_DEMOGRAPHS;
 -- create the user table
 create table NEW_USER(
 	id varchar(50) not null primary key,
-	signature varchar(50) not null,
+	-- signature varchar(50) not null,
 	pretask_id int,
 	table_id int,
 	treemap_id int,
