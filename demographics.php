@@ -17,7 +17,7 @@
 			$(function(){
 				//Populate form
 				$(function() {
-					var formData = {"preQ_id":"72","signature":"aaa","q0":null,"q1":null,"q2":null,"q3":null,"q4":null,"q5":null,"q6":null, personID":null,"time_elapsed":null};
+					var formData = {"preQ_id":"72","signature":"aaa","q0":null,"q1":null,"q2":null,"q3":null,"q4":null,"q5":null,"q6":null, "personID":null,"time_elapsed":null};
 					console.log(formData);
 					if (formData != null) {
 						$.each(formData, function(key,val) {
@@ -68,7 +68,7 @@
 	<div class="navbar navbar-fixed-top navbar-inverse">
 	<div class="navbar-inner">
 		<div class="container">
-			<span class="brand"><img src="assets/img/dna.png"> PGHCI</span>
+			<span class="brand"><img src="assets/img/dna.png"> PGHCI: Demographic Questions</span>
 		</div>
 	</div>
 	</div>
@@ -78,15 +78,22 @@
 		<input type="submit" name="submit" value="Back to consent" class="submit_top">
 		<input type="submit" name="submit" value="Continue to report" class="submit_top">
 				<p>Your participant ID is 6a9384.
-		<h2>Questions</h2>
+		<h2>Demographic Questions</h2>
 		
-		<li>How old are you? <input type="number" name="q1" id="age">
-		<li>What is your gender?<br>
-			<label><input type="radio" name="q2" required value="female">Female</label>
-			<label><input type="radio" name="q2" value="male">Male</label>
-			<label><input type="radio" name="q2" value="other">Other</label>
-		<li>Education:
-			<select name="q3" required>
+		<label for="age"> <strong>How old are you?</strong> </label>
+		<input type="number" name="q1" id="age" style="height:30px;">
+		<p><strong>What is your gender?</strong></p>
+			<label for="q2_F">
+				<input id="q2_F" type="radio" name="q2" required value="female"> Female
+			</label>
+			<label for="q2_M">
+				<input id="q2_M" type="radio" name="q2" value="male"> Male
+			</label>
+			<label for="q2_O">
+				<input id="q2_O" type="radio" name="q2" value="other"> Other
+			</label>
+		<p><strong>Education:</strong></p>
+			<select name="q3">
 				<option value="some high-school">Some high-school</option>
 				<option value="high-school diploma">High-school diploma</option>
 				<option value="some college">Some college</option>
@@ -94,17 +101,25 @@
 				<option value="masters degree">Masters degree</option>
 				<option value="doctoral degree">Doctoral degree</option>
 			</select>
-		<li>Do you work in the life sciences?<br>
-			<label><input type="radio" name="q4" required value="yes">Yes</label>
-			<label><input type="radio" name="q4" value="no">No</label>
-		<li>Did you study life sciences at a collegiate or higher level?<br>
-			<label><input type="radio" name="q4" required value="yes">Yes</label>
-			<label><input type="radio" name="q4" value="no">No</label>
+		<p><strong>Do you work in the life sciences?</strong></p>
+			<label for="q4_Y">
+				<input id="q4_Y" type="radio" name="q4" required value="yes"> Yes
+			</label>
+			<label for="q4_N">
+				<input id="q4_N" type="radio" name="q4" value="no"> No
+			</label>
+		<p><strong>Did you study life sciences at a collegiate or higher level?</strong></p>
+			<label for="q5_Y">
+				<input id="q5_Y" type="radio" name="q5" required value="yes"> Yes
+			</label>
+			<label for="q5_N">
+				<input id="q5_N" type="radio" name="q5" value="no"> No
+			</label>
 		
 			
 		</ol>
-		<input type="submit" name="submit" value="Back to Privacy" id="back_demog">
-		<input type="submit" name="submit" value="Submit" id="submit_demog">
+		<input type="submit" name="submit" value="Back to Privacy" id="back_demog" class="btn btn-primary">
+		<input type="submit" name="submit" value="Submit" id="submit_demog" class="btn btn-primary submit-survey">
 		</form>
 
 	</div>
