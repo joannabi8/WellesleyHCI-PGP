@@ -23,16 +23,19 @@ function fetch_row($prepared){ //prepared is a result set
 
 // security check for field values retrieved
 function secure_val($val) {
-    $newVal = stripslashes($val);
-    $newVal = htmlspecialchars($newVal);
+        $newVal = stripslashes($val);
+        $newVal = htmlspecialchars($newVal);
 	return $newVal;
 }
 
 // get all field values from a form
 function getUserResponse($postArray) {
 	$userResponse = array();
+	echo $_POST['v1_q9'];
+	echo $_POST['v1_q9_A'];
 	foreach ($_POST as $key => $entry) {
-		array_push($userResponse, secure_val($entry));
+	  //echo $key . "->" . $entry . "<br>";
+	  array_push($userResponse, secure_val($entry));
 	}
 	array_pop($userResponse); //removes submit from array
 	return $userResponse;
@@ -72,7 +75,7 @@ function ip_exists($ip) {
 // return user row with ip address $ip
 function find_user_with_ip($ip) {
 	global $dbh;
-	$query = "SELECT ip FROM NEW_USER WHERE ip=?"; //I don't currently have an ip column...
+	$query = "SELECT ip FROM NEW_USER WHERE ip=?";
 	return $result = prepared_query($dbh, $query, array(inet_pton($ip)));
 }
 

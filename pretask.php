@@ -45,21 +45,6 @@ if ($pretaskID!= null) {
     <meta name=author content="Joanna Bi">
   	<link rel="stylesheet" href="styles/bootswatch.css">
   	<link rel="stylesheet" type="text/css" href="styles/style.css">
-  	<!--Javascript for generating random vis-->
-  	<script type="text/javascript">
-		var numPages = 3;
-		var page = new Array(numPages + 1);
-		//array of possible pages
-		page[0] = "table.html";
-		page[1] = "treeMap.html";
-		page[2] = "bubble.html";
-		page[3] = "bar.html";
-		//function to generate random
-		function randomPage() {
-			window.location = page[Math.floor(Math.random()*page.length)]
-		}
-		</script>
-	<!--End javascript-->
   	<title>PGHCI: Training</title>
 </head>
 
@@ -68,7 +53,7 @@ if ($pretaskID!= null) {
 <div class="navbar navbar-fixed-top navbar-inverse">
     <div class="navbar-inner">
        	<div class="container">
-       		<span class="brand"><img src="assets/img/dna.png"> PGHCI</span>
+       		<span class="brand"><img src="assets/img/dna.png"> PGHCI: Training</span>
         </div>
     </div>
 </div>

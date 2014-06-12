@@ -15,7 +15,6 @@ localConn();
 function add_pretask_row($userResponse) {
 	global $dbh;
 	$query = "INSERT INTO NEW_PRETASK VALUES (DEFAULT,?,?,?,?,?,?,?)";
-	echo $userReponse;
 	return $result = prepared_query($dbh, $query, $userResponse);
 }
 
@@ -36,8 +35,8 @@ if (!empty($_POST)) {
 	if (!$ipUsed) {
 		add_pretask_row($pretaskResponse);
 		$pretask_id = mysql_insert_id(); //documented php function
-		$add_user = "INSERT INTO NEW_USER VALUES (?,?,?,?,?,?,?,?,?,?,?)";
-		prepared_query($dbh, $add_user, array($id,$pretask_id,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL));
+		$add_user = "INSERT INTO NEW_USER VALUES (?,?,?,?,?,?,?,?,?)";
+		prepared_query($dbh, $add_user, array($id,$pretask_id,NULL,NULL,NULL,NULL,NULL,NULL,NULL));
 	}
 
 	// Redirect user to a random visualization

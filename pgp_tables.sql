@@ -8,13 +8,11 @@ drop table if exists NEW_DEMOGRAPHS;
 -- create the user table
 create table NEW_USER(
 	id varchar(50) not null primary key,
-	-- signature varchar(50) not null,
 	pretask_id int,
 	table_id int,
 	treemap_id int,
+	bar_id int,
 	bubble_id int,
-	barchart_id int,
-	sharing_id int,
 	demo_id int,
 	ip varchar(50),
 	total_time int
@@ -37,17 +35,17 @@ create table NEW_PRETASK(
 -- create the visualizations table
 create table NEW_VIS(
 	vis_id int auto_increment not null primary key,
-	vis_type enum('table','treemap','bubble','bar') not null,
+	vis_type enum('table','treemap','bar','bubble') not null,
 	q1 int not null,
 	q2 int not null,
-	q3 int not null,
-	q4 int not null,
-	q5 enum('yes','no') not null,
-	q6 enum('a','b','c','d') not null,
+	q3 enum('a','b','c','d') not null,
+	q4 enum('a','b','c','d') not null,
+	q5 enum('a','b','c','d') not null,
+	q6 varchar(500) not null,
 	q7 enum('a','b','c','d') not null,
 	q8 enum('a','b','c','d') not null,
-	q9_a char(9) not null, -- not sure I completely understand this yet
-	q9_b char(9) not null,
+	q9_a char(11) not null, -- not sure I completely understand here
+	q9_b char(11) not null,
 	q9_c char(13) not null,
 	q9_d char(12) not null,
 	q9_e char(8) not null,
@@ -61,13 +59,8 @@ create table NEW_VIS(
     q10_e enum('1','2','3','4','5','6','7') not null,
     q10_f enum('1','2','3','4','5','6','7') not null,
     q10_g enum('1','2','3','4','5','6','7') not null,
-    q10_h enum('1','2','3','4','5','6','7') not null,
-    q10_i enum('1','2','3','4','5','6','7') not null,
-    q10_j enum('1','2','3','4','5','6','7') not null,
-    q10_k enum('1','2','3','4','5','6','7') not null,
-    q10_l enum('1','2','3','4','5','6','7') not null,
-    q10_m enum('1','2','3','4','5','6','7') not null,
     q11 varchar(500),
+	q12 varchar(500),
     time_spent int
 	)
 	ENGINE = InnoDB;

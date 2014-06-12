@@ -19,7 +19,7 @@ localConn(); //establish connection
 // Add row to NEW_VIS table
 function add_vis_row($userResponse) {
 	global $dbh;
-	$query = "INSERT INTO NEW_VIS VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	$query = "INSERT INTO NEW_VIS VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 	return $result = prepared_query($dbh, $query, $userResponse);
 }
 
@@ -41,23 +41,40 @@ $ipUsed = filter_var($ip, FILTER_VALIDATE_IP) ? ip_exists($ip) : true; //more co
 // Update data
 if (!empty($_POST)) {
 
-	$userResponse = array_merge(array($type), getUserResponse($_POST));
+	// Time stuff
+	$start_time = $_SESSION["vis_start_time"];
+	$vis_task_time = time() - $start_time;
+
+	// Fixing types for tables
+	$vis_type = "";
+	if ($type == "v1") { $vis_type = "table"; }
+	else if ($type == "v2") { $vis_type = "treemap"; }
+	else if ($type == "v3") { $vis_type = "bar"; }
+	else { $vis_type = "bubble"; }
+
+        // Fix array length for prepared query
+	$userResponse = array_merge(array($vis_type), getUserResponse($_POST));
+	$userResponse = array_merge($userResponse, array($vis_task_time));
 
 	if(!$ipUsed) {
 		add_vis_row($userResponse); //adds new response to vis table
 
-		// Update the total time spent
-		$vis_id = mysql_insert_id();
+		// Update time spent
+		$vis_id = mysql_insert_id(); //documented php function
 
-		$user = fetch_row(find_user($user));
-		$pretask = fetch_row(find_pretask_row($user["pretask_id"]));
+		// Populate the user table
+		$get_user = fetch_row(find_user($user));
+		$get_pretask = fetch_row(find_pretask_row($user["pretask_id"]));
 
-		$update_user = "UPDATE NEW_USER SET vis_id = ?, total_time = ?, ip = ? WHERE id = ?";
-		$total_time = intval($_POST["timeSpent"]) + intval($pretask["time_elapsed"]);
-		prepared_query($dbh, $update_user, array($vis_id, $total_time, inet_pton($ip), $user));
+		$vis_type = $vis_type . "_id";
+		$update_user = "UPDATE NEW_USER SET $vis_type = ?, ip = ? WHERE id = ?";
+		prepared_query($dbh, $update_user, array($vis_id, inet_pton($ip), $user));
 	}
 
-	readfile("privacy.html"); //redirect to privacy page
+	// Redirect user to demographics page
+	$header = "Location: http://cs.wellesley.edu/~hcilab/pghci_NEW/demographics.php";
+   	header($header); //redirects user
+	exit();
 }
 
-//session_destroy(); //do we want to destory the session now?
+//session_destroy();
