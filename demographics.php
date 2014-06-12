@@ -5,7 +5,7 @@
 	-->
 <html>
 	<head>
-		<title>PGHCI for GET Labs: Questions</title>
+		<title>PGHCI: Questions</title>
 				
 		<link href="styles/bootswatch.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="vis_style.css">
@@ -68,7 +68,7 @@
 	<div class="navbar navbar-fixed-top navbar-inverse">
 	<div class="navbar-inner">
 		<div class="container">
-			<span class="brand"><img src="assets/img/dna.png"> PGHCI for GET Labs</span>
+			<span class="brand"><img src="assets/img/dna.png"> PGHCI</span>
 		</div>
 	</div>
 	</div>
