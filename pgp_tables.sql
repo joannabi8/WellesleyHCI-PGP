@@ -22,12 +22,12 @@ create table NEW_USER(
 -- create the pretask table
 create table NEW_PRETASK(
 	pretask_id int auto_increment not null primary key,
-	q1 enum('yes','no') not null,
+	q1 enum('true','false') not null,
 	q2 enum('10','50','99') not null,
 	q3 enum('true','false') not null,
 	q4 enum('true','false') not null,
 	q5 enum('true','false') not null,
-	q6 enum('yes','no') not null,
+	q6 enum('true','false') not null,
 	time_spent int
 	)
 	ENGINE = InnoDB;
