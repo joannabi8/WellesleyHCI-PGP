@@ -76,7 +76,7 @@
 					it is associated with.</p>
 
 			<h2>Jamie's Results</h2>
-			<embed width="900" height="600" src="tree.html" scale="tofit" frameborder="5"></embed>
+			<embed width="900" height="450" src="tree.html" scale="tofit" frameborder="5"></embed>
 		<!--	<div id="visualization">
 				<div id="vis_low"></div>
 				<div id="vis_mod"></div>
