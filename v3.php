@@ -76,7 +76,7 @@
 					it is associated with. Also, when hovering upon a column name, additional information about this information category is presented.</p>
 			
 			<h2>Jamie's Results</h2>
-			<embed width="900" height="600" src="barChart.html" scale="tofit" frameborder="5"></embed>
+			<embed width="1000" height="450" src="barChart.html" scale="tofit" frameborder="5"></embed>
 			<!--<div id="visualization" style="margin-left:-80px;"></div>-->
 			<h2>Questions About the Report</h2>
 				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
