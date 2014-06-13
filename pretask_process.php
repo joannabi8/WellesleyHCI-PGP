@@ -28,6 +28,7 @@ if (!empty($_POST)) {
 	$start_time = $_SESSION["pretask_start_time"];
 	$pretask_time = time() - $start_time;
 	array_push($pretaskResponse, $pretask_time);
+	$_SESSION['pretask_time'] = $pretask_time; //for later
 
 	// Filter out used ip's
 	$ipUsed = filter_var($ip, FILTER_VALIDATE_IP) ? ip_exists($ip) : true; //more concise 'if' clause

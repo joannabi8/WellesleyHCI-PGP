@@ -31,9 +31,9 @@ function find_pretask_row($pre_id) {
 }
 
 // PROCESS DATA
-$type = $_SESSION['vis'];
+$type = $_SESSION["vis"];
 $user = $_SESSION["user"];
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_SERVER["REMOTE_ADDR"];
 
 // Filter out used ip's
 $ipUsed = filter_var($ip, FILTER_VALIDATE_IP) ? ip_exists($ip) : true; //more concise 'if' clause
@@ -44,16 +44,10 @@ if (!empty($_POST)) {
 	// Time stuff
 	$start_time = $_SESSION["vis_start_time"];
 	$vis_task_time = time() - $start_time;
-
-	// Fixing types for tables
-	$vis_type = "";
-	if ($type == "v1") { $vis_type = "table"; }
-	else if ($type == "v2") { $vis_type = "treemap"; }
-	else if ($type == "v3") { $vis_type = "bar"; }
-	else { $vis_type = "bubble"; }
+	$_SESSION['vis_time'] = $vis_task_time; //for later
 
         // Fix array length for prepared query
-	$userResponse = array_merge(array($vis_type), getUserResponse($_POST));
+	$userResponse = array_merge(array($type), getUserResponse($_POST));
 	$userResponse = array_merge($userResponse, array($vis_task_time));
 
 	if(!$ipUsed) {
@@ -66,9 +60,9 @@ if (!empty($_POST)) {
 		$get_user = fetch_row(find_user($user));
 		$get_pretask = fetch_row(find_pretask_row($user["pretask_id"]));
 
-		$vis_type = $vis_type . "_id";
-		$update_user = "UPDATE NEW_USER SET $vis_type = ?, ip = ? WHERE id = ?";
-		prepared_query($dbh, $update_user, array($vis_id, inet_pton($ip), $user));
+		$vis_type = $type . "_id";
+		$update_user = "UPDATE NEW_USER SET $vis_type = ? WHERE id = ?";
+		prepared_query($dbh, $update_user, array($vis_id, $user));
 	}
 
 	// Redirect user to demographics page
