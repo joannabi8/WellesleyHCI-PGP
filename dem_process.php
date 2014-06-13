@@ -56,7 +56,7 @@ if (!empty($_POST)) {
 	}
 	
 	// Redirect user to thank you page
-	$header = "Location: http://cs.wellesley.edu/~hcilab/pghci_NEW/thankyou.html";
+	$header = "Location: http://cs.wellesley.edu/~hcilab/pghci_NEW/thankyou.php";
    	header($header); //redirects user
 	exit();
 }
