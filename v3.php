@@ -52,8 +52,8 @@
 			
 		</script>
 
-		<script type="text/javascript">
-      function drawVisualization() {
+	<!--  	<script type="text/javascript">
+    function drawVisualization() {
         // Create and populate the data table.
         var data = google.visualization.arrayToDataTable([
 		     
@@ -540,7 +540,8 @@
 		}
       
       google.setOnLoadCallback(drawVisualization);
-    </script>
+      </script>-->
+    
 	</head>
 	<body>
 		<div class="navbar navbar-fixed-top navbar-inverse">
@@ -563,7 +564,8 @@
 					it is associated with. Also, when hovering upon a column name, additional information about this information category is presented.</p>
 			
 			<h2>Jamie's Results</h2>
-			<div id="visualization" style="margin-left:-80px;"></div>
+			<embed width="900" height="800" src="barChart.html" scale="tofit" frameborder="5"></embed>
+			<!--<div id="visualization" style="margin-left:-80px;"></div>-->
 			<h2>Questions About the Report</h2>
 				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
 				<form action="vis_process.php" method="post" id="v3_q">
