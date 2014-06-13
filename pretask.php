@@ -42,10 +42,30 @@ if ($pretaskID!= null) {
 <html lang='en'>
 <head>
 	<meta charset='utf-8'>
-    <meta name=author content="Joanna Bi">
-  	<link rel="stylesheet" href="styles/bootswatch.css">
+        <meta name=author content="Joanna Bi">
+ 	<title>PGHCI: Training</title>
+	
+        <!--jQuery & vis.js-->
+	<script type="text/javascript" charset="utf8" src="scripts/jquery/jquery-1.10.2.js"></script>
+	<script type="text/javascript" charset="utf8" src="scripts/vis.js"></script>
+	
+	<!-- jQuery UI -->
+	<link rel="stylesheet" type="text/css" href="scripts/jquery/jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+        <script type="text/javascript" charset="utf8" src="scripts/jquery/jquery-ui-1.10.4.custom.js"></script>
+  	
+        <link rel="stylesheet" href="styles/bootswatch.css">
   	<link rel="stylesheet" type="text/css" href="styles/style.css">
-  	<title>PGHCI: Training</title>
+
+	<script>
+		$(function(){
+			// Validate form
+			var submit_id = $("#submit_pretask");
+			var form_id = $("#pretask");
+			var validateWarning = $("#validate_msg");				
+			validateForm_vis(submit_id,form_id,validateWarning);
+		});
+	</script>
+
 </head>
 
 <body>
@@ -129,8 +149,10 @@ if ($pretaskID!= null) {
 			<label><input type="radio" name="q6" value="false">False</label>
 	</ol>
 	
-	<p><input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Continue" id="Submit_PreTask"></p> 
+	<p><input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Continue" id="submit_pretask"></p> 
 	</form>
+</div>
+<div class="alert alert-block" id='validate_msg'></div>
 
 </body>
 </html>
