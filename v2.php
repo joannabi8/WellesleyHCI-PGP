@@ -76,11 +76,12 @@
 					it is associated with.</p>
 
 			<h2>Jamie's Results</h2>
-			<div id="visualization">
+			<embed width="900" height="800" src="tree.html" scale="tofit" frameborder="5"></embed>
+		<!--	<div id="visualization">
 				<div id="vis_low"></div>
 				<div id="vis_mod"></div>
 				<div id="vis_high"></div>
-			</div>
+			</div>-->
 			<h2>Questions About the Report</h2>
 				<p>Please answer the following questions based on Jamie's report. Feel free to <strong>revisit the report</strong> as needed in order to answer the questions correctly.</p>
 				<form action="vis_process.php" method="post" id="v2_q">
