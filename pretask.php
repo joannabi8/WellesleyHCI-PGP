@@ -101,9 +101,9 @@ if ($pretaskID!= null) {
 	<form id="pretask" method="POST" action="pretask_process.php">
 	<!-- INCLUDE FORWARD / BACK BUTTONS LATER -->
 
-	<ol><li><b>Do your genes determine everything about you and your future?</b><br>
-			<label><input type="radio" name="q1" value="yes">Yes</label>
-			<label><input type="radio" name="q1" value="no">No</label>
+	<ol><li><b>True or False: Your genes determine everything about you and your future.</b><br>
+			<label><input type="radio" name="q1" value="true">True</label>
+			<label><input type="radio" name="q1" value="false">False</label>
 
 		<li><b>Pick any 2 people in the world. What percentage of their DNA sequence is the same?</b><br>
 			<label><input type="radio" name="q2" value="10">About 10%</label>
@@ -124,9 +124,9 @@ if ($pretaskID!= null) {
 			<label><input type="radio" name="q5" value="true">True</label>
 			<label><input type="radio" name="q5" value="false">False</label>
 
-		<li><b>Can your genes influence how certain drugs may work for you?</b><br>
-			<label><input type="radio" name="q6" value="yes">Yes</label>
-			<label><input type="radio" name="q6" value="no">No</label>
+		<li><b>True or False: Your genes influence how certain drugs may work for you.</b><br>
+			<label><input type="radio" name="q6" value="true">True</label>
+			<label><input type="radio" name="q6" value="false">False</label>
 	</ol>
 	
 	<p><input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Continue" id="Submit_PreTask"></p> 

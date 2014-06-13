@@ -258,7 +258,7 @@
 								<td><input type="radio" name="v1_q10_b" value="7"></td>
 							</tr>
 							<tr>
-								<td>The report is predictive of Jamie's future medical conditions with high certainty.</td>
+								<td>Jamie's genes determine everything about them and their future.</td>
 								<td><input type="radio" name="v1_q10_c" value="1"></td>
 								<td><input type="radio" name="v1_q10_c" value="2"></td>
 								<td><input type="radio" name="v1_q10_c" value="3"></td>
@@ -335,16 +335,16 @@
 			var el = document.getElementById(spanid);
 			if (value === "greater") {
 				el.innerHTML = "<strong>GREATER THAN</strong>";
-				el.style.color = "red";
+				el.style.color = "green";
 			} else if (value === "equal") {
 				el.innerHTML = "<strong>EQUAL TO</strong>";
-				el.style.color = "red";
+				el.style.color = "green";
 			} else if (value === "less") {
 				el.innerHTML = "<strong>LESS THAN</strong>";
-				el.style.color = "red";
+				el.style.color = "green";
 			} else if (value === "dunno") {
 				el.innerHTML = "<strong>???</strong>";
-				el.style.color = "red";
+				el.style.color = "green";
 			}
 		}
 		</script> 
