@@ -295,16 +295,16 @@
 			var el = document.getElementById(spanid);
 			if (value === "greater") {
 				el.innerHTML = "<strong>GREATER THAN</strong>";
-				el.style.color = "green";
+				el.style.color = "blue";
 			} else if (value === "equal") {
 				el.innerHTML = "<strong>EQUAL TO</strong>";
-				el.style.color = "green";
+				el.style.color = "blue";
 			} else if (value === "less") {
 				el.innerHTML = "<strong>LESS THAN</strong>";
-				el.style.color = "green";
+				el.style.color = "blue";
 			} else if (value === "dunno") {
 				el.innerHTML = "<strong>???</strong>";
-				el.style.color = "green";
+				el.style.color = "blue";
 			}
 		}
 		</script>
