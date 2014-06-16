@@ -283,7 +283,7 @@
 					<textarea name="v4_q12" id="v4_q12" cols="30" rows="5"></textarea>
 					
 					
-				<input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" id="Submit_v4">
+				<input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Continue" id="Submit_v4">
 			</form>
 		</div>
 		<div class="alert alert-block" id='validate_msg'></div>

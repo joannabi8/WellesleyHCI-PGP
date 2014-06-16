@@ -313,7 +313,7 @@
 					
 					
 					
-				<input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" id="Submit_v1">
+				<input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Continue" id="Submit_v1">
 			</form>
 		</div>
 		<div class="alert alert-block" id='validate_msg'></div>

@@ -284,7 +284,7 @@
 					<label for="v2_q12">Please use the space below to tell us how we can improve the report to make it easier to understand.</label>
 					<textarea name="v2_q12" id="v2_q12" cols="30" rows="5"></textarea>
 					
-				<input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Submit" id="Submit_v2">
+				<input class="btn btn-primary submit-survey" type="submit" name="Submit" value="Continue" id="Submit_v2">
 			</form>
 		</div>
 		<div class="alert alert-block" id='validate_msg'></div>
