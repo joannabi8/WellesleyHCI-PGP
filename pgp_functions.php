@@ -31,10 +31,8 @@ function secure_val($val) {
 // get all field values from a form
 function getUserResponse($postArray) {
 	$userResponse = array();
-	echo $_POST['v1_q9'];
-	echo $_POST['v1_q9_A'];
 	foreach ($_POST as $key => $entry) {
-	  //echo $key . "->" . $entry . "<br>";
+	  echo $key . "->" . $entry . "<br>";
 	  array_push($userResponse, secure_val($entry));
 	}
 	array_pop($userResponse); //removes submit from array

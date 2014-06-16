@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$_SESSION["vis"] = "v1";
+	$_SESSION["vis"] = "table";
 	error_reporting(E_ERROR);
 ?>
 <!--
@@ -198,30 +198,21 @@
 					</label>
 
 					<p><strong>If you were Jamie, knowing this information, which of the following conditions would you be interested in learning more about? Select all that apply.</strong>
-					<label class="checkbox" for="v1_q9_A">
-						<input type="checkbox" name="v1_q9" id="v1_q9_A" value="alzheimers">Alzheimer's
-					</label>
-					<label class="checkbox" for="v1_q9_B">
-						<input type="checkbox" name="v1_q9" id="v1_q9_B" value="parkinsons">Parkinson's
-					</label>
-					<label class="checkbox" for="v1_q9_C">
-						<input type="checkbox" name="v1_q9" id="v1_q9_C" value="liver">Liver Disease
-					</label>
-					<label class="checkbox" for="v1_q9_D">
-						<input type="checkbox" name="v1_q9" id="v1_q9_D" value="colon">Colon Cancer
-					</label>
-					<label class="checkbox" for="v1_q9_E">
-						<input type="checkbox" name="v1_q9" id="v1_q9_E" value="diabetes">Diabetes
-					</label>
-					<label class="checkbox" for="v1_q9_F">
-						<input type="checkbox" name="v1_q9" id="v1_q9_F" value="emphysema">Emphysema
-					</label>
-					<label class="checkbox" for="v1_q9_G">
-						<input type="checkbox" name="v1_q9" id="v1_q9_G" value="tuberculosis">Tuberculosis
-					</label>
-					<label class="checkbox" for="v1_q9_H">
-						<input type="checkbox" name="v1_q9" id="v1_q9_H" value="eye">Eye Disease
-					</label>
+			<label><input type="checkbox" name="q9a"  value="alzheimers">Alzheimer's</label>
+			<input type="hidden" name="q9b">
+			<label><input type="checkbox" name="q9b"  value="parkinsons">Parkinson's</label>
+			<input type="hidden" name="q9c">
+			<label><input type="checkbox" name="q9c"  value="liver">Liver Disease</label>
+			<input type="hidden" name="q9d">
+			<label><input type="checkbox" name="q9d"  value="colon">Colon Cancer</label>
+			<input type="hidden" name="q9e">
+			<label><input type="checkbox" name="q9e"  value="diabetes">Diabetes</label>
+			<input type="hidden" name="q9f">
+			<label><input type="checkbox" name="q9f"  value="emphysema">Emphysema</label>
+			<input type="hidden" name="q9g">
+			<label><input type="checkbox" name="q9g"  value="tuberculosis">Tubercolosis</label>
+			<input type="hidden" name="q9h">
+			<label><input type="checkbox" name="q9h"  value="eye">Eye Disease</label>
 
 					<table class="table table-bordered table-striped table-hover">
 						<thead>
