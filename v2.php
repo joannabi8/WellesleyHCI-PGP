@@ -66,14 +66,13 @@
 		
 		<div class="container" id="study_wrapper">
 			<h2>Instructions for the Study</h2>
-			<p>Following is a report that is based on an individual's personal genomic information. 
-					For the purpose of this study we will name this individual Jamie. Read the explanation 
-					below carefully and then study Jamie's report. You will be asked questions about this report. 
-					The report was created by comparing Jamie's genome and a database of gene variants that are known
-					to be associated with medical conditions. Only gene variants that are found to be medically relevant
-					are reported.The report displays a TreeMap of gene variants. For each gene variant the TreeMap presents
-					its name, and upon hovering its clinical importance, impact, allele frequency, and a summary about the medical conditions
-					it is associated with.</p>
+			<p>Following is a report that is based on an individual's personal genomic information. For the purpose of this study we will name this individual Jamie. Read the explanation below carefully and then study Jamie's report. You will be asked questions about this report.</p>
+			<p>The report was created by comparing Jamie's genome and a database of gene variants that are known to be associated with medical conditions. Only gene variants that are found to be medically relevant are reported.</p>
+			<p>The report displays a TreeMap visualization of gene variants. Treemaps display hierarchical data as a set of nested rectangles. In the report below you can see that at the Overview level the Treemap presents three categories: low clinical importance, medium clinical importance, and high clinical importance.</p>
+			<p>Upon clicking on one of these categories, the treemap presents a collection of rectangles, each represents a gene variant. The color of a gene variant represents its potential impact. Red rectangles represent pathogenic gene variants, white rectangles represent benign gene variants, and blue rectangles represent protective gene variants. The saturation (i.e. intensity) of a color represents the certainty of the impact. For example, red gene variants are well established pathogenic but pink gene variants are only likely, or possibly, pathogenic.</p>
+			<p>For each gene variant the TreeMap presents its name, and upon hovering additional information is provided including a summary about the medical conditions the gene variants is associated with.</p>
+			<p>Use the buttons above the visualization to navigate the TreeMap visualization.</p>
+			<p>Study Jamie’s report carefully, then answer the questions following the report.</p>
 
 			<h2>Jamie's Results</h2>
 			<embed width="900" height="500" src="tree.html" scale="tofit" frameborder="5"></embed>

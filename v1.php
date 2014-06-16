@@ -83,16 +83,11 @@
 		
 		<div class="container" id="study_wrapper">
 			<h2>Instructions for the Study</h2>
-			<p>Following is a report that is based on an individual's personal genomic information. 
-					For the purpose of this study we will name this individual Jamie. Read the explanation 
-					below carefully and then study Jamie's report. You will be asked questions about this report. 
-					The report was created by comparing Jamie's genome and a database of gene variants that are known
-					to be associated with medical conditions. Only gene variants that are found to be medically relevant
-					are reported.The report displays a table of gene variants. For each gene variant the table presents
-					its name, clinical importance, impact, allele frequency, and a summary about the medical conditions
-					it is associated with. You can sort the table by clicking on the arrows in each of the table columns.
-					Also, when hovering upon a column name, additional information about this information category is presented.</p>
-			
+			<p>Following is a report that is based on an individual's personal genomic information. For the purpose of this study we will name this individual Jamie. Read the explanation below carefully and then study Jamie's report. You will be asked questions about this report.</p>
+			<p>The report was created by comparing Jamie's genome and a database of gene variants that are known to be associated with medical conditions. Only gene variants that are found to be medically relevant are reported.</p>
+			<p>The report displays a table of gene variants. For each gene variant the table presents its name, clinical importance, impact, allele frequency, and a summary about the medical conditions it is associated with. You can sort the table by clicking on the arrows in each of the table columns.</p>
+			<p>Study Jamie’s report carefully, then answer the questions following the report.</p>
+
 			<h2>Jamie's Results</h2>
 			<div class="report_table_wrapper">
 				<!-- GENOME REPORT TABLE -->

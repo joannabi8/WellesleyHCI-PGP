@@ -61,18 +61,12 @@
 			
 			<div class="container" id="study_wrapper">
 				<h2>Instructions</h2>
-				<p>Following is a report that is based on an individual's personal genomic information. 
-					For the purpose of this study we will name this individual Jamie. Read the explanation 
-					below carefully and then study Jamie's report. You will be asked questions about this report. 
-					The report was created by comparing Jamie's genome and a database of gene variants that are known
-					to be associated with medical conditions. Only gene variants that are found to be medically relevant
-					are reported.The report displays a bubble chart of gene variants. For each gene variant the bubble chart presents
-					its name, clinical importance, impact, allele frequency, and a summary about the medical conditions
-					it is associated with upon hovering your cursor over the bubble. On the x-axis of the bubble chart you will find a scale from Low Clinical Importance to High Clinical Importance, also demonstrated by the growing bubble size. 
-					On the y-axis of the bubbe chart you will find a scale from Well-Established Protective to Well-Established Pathogenic, also demonstrated by the color gradient from green to neutral to red. 
-					</p>
-
+				<p>Following is a report that is based on an individual's personal genomic information. For the purpose of this study we will name this individual Jamie. Read the explanation below carefully and then study Jamie's report. You will be asked questions about this report.</p>
+				<p>The report was created by comparing Jamie's genome and a database of gene variants that are known to be associated with medical conditions. Only gene variants that are found to be medically relevant are reported.</p>
+				<p>The report displays a Bubble Chart of gene variants. The x-axis is divided into 3 areas: low clinical importance, medium clinical importance, and high clinical importance. Within these areas, each bubble represents a gene variant. The height and color of a gene variant represent its potential impact. For example, red bubbles represent pathogenic gene variants, white bubbles represent benign gene variants, and blue bubbles represent protective gene variants. The saturation (i.e. intensity) of a color represents the certainty of the impact. For example, red gene variants are well established pathogenic but pink gene variants are only likely, or possibly, pathogenic.</p>
+				<p>Also, when hovering upon a variant, additional information is provided including a summary about the medical conditions the gene variants is associated with.</p>
 				
+
 		<h2>Jamie's Results</h2>							
        <embed width="900" height="800" src="bubble.html" scale="tofit" frameborder="5"></embed>
 				
