@@ -355,10 +355,10 @@
 
             <!-- Dimensions in the next line! -->
 
-            <button type="button" id="back" onclick ="back()">Back to top level</button><br>
-            <button type="button" id="low" onclick="low()">View Low</button>
-            <button type="button" id="medium" onclick="medium()">View Medium</button>
-            <button type="button" id="high" onclick="high()">View High</button>
+            <button type="button" style="margin:8px 8px 0px 8px" id="back" onclick ="back()">Back to top level</button><br>
+            <button type="button" style="margin:8px 8px 8px 8px" id="low" onclick="low()">View Low</button>
+            <button type="button" style="margin:8px 8px 8px 0px" id="medium" onclick="medium()">View Medium</button>
+            <button type="button" style="margin:8px 8px 8px 0px" id="high" onclick="high()">View High</button>
           <div>
 
           <div id="visualization" style="width: 600px; height: 400px;"></div>
