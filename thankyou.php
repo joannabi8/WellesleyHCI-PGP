@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
             <div class="container">
@@ -23,6 +24,10 @@
 
     <div class="container" id="study_wrapper">
         <h1 style="padding-top:10%">Thank you for participating!</h1>
+        <?php
+		    echo "<h3> Your participant ID is: <span style='color:blue'>" . randomCode() . "</span>.</h3>" ;
+		?>
+
     </div>
 
 </body>
