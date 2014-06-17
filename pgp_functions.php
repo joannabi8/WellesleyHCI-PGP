@@ -77,5 +77,17 @@ function find_user_with_ip($ip) {
 	return $result = prepared_query($dbh, $query, array(inet_pton($ip)));
 }
 
+// check if mturk id  already exists in the db
+function mturk_id_exists($mturk_id) {
+	return ((find_mturk_id($mturk_id) -> numRows()) > 0);
+}
+
+// finds mturk id in database
+function find_mturk_id($mturk_id) {
+	global $dbh;
+	$query = "SELECT * FROM NEW_USER WHERE mturk_id=?";
+	return $result = prepared_query($dbh, $query, array($mturk_id));
+}
+
 
 ?>

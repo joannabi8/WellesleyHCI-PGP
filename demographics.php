@@ -13,7 +13,7 @@
     		    }
    			    return $code;
 		}
-		
+/*
 		//array to hold random codes without duplicates (up to 1000 elements)
 		$total = 0;
 		$allCodes = array();
@@ -23,9 +23,18 @@
     		 }
     		 $allCodes = array_unique($allCodes);
     		 $total = count($allCodes);
-        }
+        }*/
 
-        
+//Make sure no duplicate mturk ids
+require_once('pgp_functions.php');
+$dbh;
+localConn(); //establish connection
+
+$mturk_id = randomCode();
+while (mturk_id_exists($mturk_id)) {
+  $mturk_id = randomCode();
+}
+$_SESSION['mturk_id'] = $mturk_id;
         
 ?>
 

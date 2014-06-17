@@ -29,6 +29,7 @@ function find_demo_row($dem_id) {
 
 // PROCESS DATA
 $user = $_SESSION["user"];
+$mturk_id = $_SESSION['mturk_id'];
 $ip = $_SERVER["REMOTE_ADDR"];
 
 $ipUsed = filter_var($ip, FILTER_VALIDATE_IP) ? ip_exists($ip) : true; 
@@ -50,8 +51,8 @@ if (!empty($_POST)) {
 		$get_demo = fetch_row(find_demo_row($user['demo_id']));
 		$total_time = $_SESSION['pretask_time'] + $_SESSION['vis_time'] + $demo_task_time;
 		
-		$update_user = "UPDATE NEW_USER SET demo_id = ?, ip = ?, total_time = ? WHERE id = ?";
-		prepared_query($dbh, $update_user, array($demo_id, inet_pton($ip), $total_time, $user));
+		$update_user = "UPDATE NEW_USER SET demo_id = ?, ip = ?, total_time = ?, mturk_id = ? WHERE id = ?";
+		prepared_query($dbh, $update_user, array($demo_id, inet_pton($ip), $total_time, $mturk_id, $user));
 		echo "got to end of if";
 	}
 	

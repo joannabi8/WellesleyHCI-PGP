@@ -1,3 +1,8 @@
+<?php
+	session_start();
+	error_reporting(E_ERROR);
+?>
+
 <html>
 <head>
     <title>PGHCI: Done</title>
@@ -25,7 +30,7 @@
     <div class="container" id="study_wrapper">
         <h1 style="padding-top:10%">Thank you for participating!</h1>
         <?php
-		    echo "<h3> Your participant ID is: <span style='color:blue'>" . randomCode() . "</span>.</h3>" ;
+		    echo "<h3> Your participant ID is: <span style='color:blue'>" . $_SESSION['mturk_id'] . "</span>.</h3>" ;
 		?>
 
     </div>
