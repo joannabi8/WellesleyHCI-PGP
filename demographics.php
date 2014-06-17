@@ -78,9 +78,9 @@
 				<input id="q5_N" type="radio" name="q5" value="no"> No
 			</label>
 					
-		</ol>
+		
 		<input type="submit" name="submit" value="Submit" id="submit_demog" class="btn btn-primary submit-survey">
-		</form>
+		</ol></form>
 	</div>
 
 	</body>
