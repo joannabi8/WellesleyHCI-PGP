@@ -422,7 +422,7 @@
 					</label>
 					<label class="radio" for="v2_q5_D">
 						<input type="radio" name="v2_q5" id="v2_q5_D" value="dunno" onchange="changetext(this.name, this.value);">I don't know
-					label>
+					</label>
 
 
 					<p><strong>Which variants would Jamie be most likely to discuss with a healthcare provider?</strong>
