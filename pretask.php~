@@ -80,9 +80,9 @@ if ($pretaskID!= null) {
 
 <div class="container" id="study_wrapper">
 	<!---<p>Please read over the following information carefully. Then complete the quiz below.</p>-->
-	<h2>Instructions</h2>
-	<p>Please read the following explanations carefully. Afterwards, you will be asked questions about this information. Please feel free to <strong>revist this information</strong> while answering the questions.</p>
+
 	<h2>What is a genome?</h2>
+	<p>Please read the following explanations carefully. You will be asked questions about the information, and it is necessary for completing this task successfully.</p>
 	<p>Your genome contains the set of instructions needed to make every cell, tissue, and organ in your body.
 	The biological information contained in a genome is encoded in <b>DNA</b> (deoxyribonucleic acid) and
 	divided into discrete units known as <b>genes</b>.</p>
