@@ -30,7 +30,7 @@
     <div class="container" id="study_wrapper">
         <h1 style="padding-top:10%">Thank you for participating!</h1>
         <?php
-		    echo "<h3> Your participant ID is: <span style='color:blue'>" . $_SESSION['mturk_id'] . "</span>.</h3>" ;
+		    echo "<h3> Your Amazon Mechanical Turk code is: <span style='color:blue'>" . $_SESSION['mturk_id'] . "</span>.</h3>" ;
 		?>
 
     </div>
