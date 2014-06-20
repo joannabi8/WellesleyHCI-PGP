@@ -499,12 +499,12 @@
 								<th style="width:80px;"><strong>Neither agree or disagree</strong></th>
 								<th style="width:80px;"><strong>Somewhat agree</strong></th>
 								<th style="width:80px;"><strong>Agree</strong></th>
-								<th style="width:80px;"><strong>Strongly Agree</strong></th>
+								<th style="width:80px;"><strong>Strongly agree</strong></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>The information in the report was presented in a very clear and accessible manner.</td>
+								<td>The information in the report was presented in an accessible manner.</td>
 								<td><input type="radio" name="v4_q10_a" value="1"></td>
 								<td><input type="radio" name="v4_q10_a" value="2"></td>
 								<td><input type="radio" name="v4_q10_a" value="3"></td>
