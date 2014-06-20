@@ -570,7 +570,7 @@
 			<p>Following is a report that is based on an individual's personal genomic information. For the purpose of this study we will name this individual Jamie. Read the explanation below carefully and then study Jamie's report. You will be asked questions about this report.</p>
 			<p>The report was created by comparing Jamie's genome and a database of gene variants that are known to be associated with medical conditions. Only gene variants that are found to be medically relevant are reported.</p>
 			<p>The report displays a Bar Chart of gene variants. The x-axis is divided into 3 areas: low clinical importance, medium clinical importance, and high clinical importance. Within these areas, each bar represents a gene variant. The height and color of a gene variant represent its potential impact. For example, red bars represent pathogenic gene variants, white bars represent benign gene variants, and blue bars represent protective gene variants. The saturation (i.e. intensity) of a color represents the certainty of the impact. For example, red gene variants are well established pathogenic but pink gene variants are only likely, or possibly, pathogenic.</p>
-			<p>Also, when hovering upon a variant, additional information is provided including a summary about the medical conditions the gene variants is associated with.</p>
+			<p>Also, when hovering upon a variant, additional information is provided, including a summary about the medical conditions the gene variants is associated with.</p>
 			
 
 			<h2>Jamie's Results</h2>
@@ -710,12 +710,12 @@
 								<th style="width:80px;"><strong>Neither agree or disagree</strong></th>
 								<th style="width:80px;"><strong>Somewhat agree</strong></th>
 								<th style="width:80px;"><strong>Agree</strong></th>
-								<th style="width:80px;"><strong>Strongly Agree</strong></th>
+								<th style="width:80px;"><strong>Strongly agree</strong></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>The information in the report was presented in a very clear and accessible manner.</td>
+								<td>The information in the report was presented in an accessible manner.</td>
 								<td><input type="radio" name="v3_q10_a" value="1"></td>
 								<td><input type="radio" name="v3_q10_a" value="2"></td>
 								<td><input type="radio" name="v3_q10_a" value="3"></td>
