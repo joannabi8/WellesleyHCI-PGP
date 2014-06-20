@@ -82,6 +82,7 @@ if ($pretaskID!= null) {
 	<!---<p>Please read over the following information carefully. Then complete the quiz below.</p>-->
 
 	<h2>What is a genome?</h2>
+	<p>Please read the following explanations carefully. You will be asked questions about the information, and it is necessary for completing this task successfully.</p>
 	<p>Your genome contains the set of instructions needed to make every cell, tissue, and organ in your body.
 	The biological information contained in a genome is encoded in <b>DNA</b> (deoxyribonucleic acid) and
 	divided into discrete units known as <b>genes</b>.</p>
@@ -135,7 +136,7 @@ if ($pretaskID!= null) {
 			<label><input type="radio" name="q3" value="true">True</label>
 			<label><input type="radio" name="q3" value="false">False</label>
 
-		<li><b>True or False: The higher the allele frequency is the more common a variant is in the population.</b><br>
+		<li><b>True or False: The higher the allele frequency is, the more common a variant is in the population.</b><br>
 			<label><input type="radio" name="q4" value="true">True</label>
 			<label><input type="radio" name="q4" value="false">False</label>
 
