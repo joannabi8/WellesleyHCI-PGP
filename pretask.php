@@ -145,7 +145,7 @@ if ($pretaskID!= null) {
 			<label><input type="radio" name="q5" value="true">True</label>
 			<label><input type="radio" name="q5" value="false">False</label>
 
-		<li><b>True or False: Your genes influence how certain drugs may work for you.</b><br>
+		<li><b>True or False: Your genes could influence how certain drugs may work for you.</b><br>
 			<label><input type="radio" name="q6" value="true">True</label>
 			<label><input type="radio" name="q6" value="false">False</label>
 	</ol>
