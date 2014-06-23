@@ -89,8 +89,8 @@ if ($pretaskID!= null) {
 
 	<p>All humans have the same set of genes and our genomes are over 99% identical. We can trace the differences
 	we observe between people to slight variations in these genes. A <b>gene variant</b> is a specific form of a
-	gene that a person carries as determined by its DNA sequence. For example, the major blood types, A, B, and O,
-	are determined through the gene variants a  person carries for the ABO gene. Particular gene variants may
+	gene that a person carries as determined by its DNA sequence. For example, the major blood types are AB, A, B, and O. A person's blood type is
+	determined by the variant of the ABO gene that they carry. Particular gene variants may
 	be associated with medical conditions. <b>Allele frequency</b> (frequency in population) is a measure of how common a particular variant
 	is in the population. The more common a gene variant is, the less likely it is to be cause for serious concern.<p>
 
