@@ -46,7 +46,7 @@
 						{ "mData": "Clinical Importance Category" },
 						{ "mData": "Impact" },
 						{ "mData": "Status" },
-						{ "mData": "Allele Frequency" },
+						{ "mData": "Frequency in Population" },
 						{ "mData": "Summary" }
 					],
 					"aoColumnDefs": [{
